@@ -1,0 +1,109 @@
+.flats
+	.flats__in
+		max-width: 1000px
+		margin: 0 auto
+		padding: 128px 0 103px 0
+		position: relative
+		+clr
+		+r(1080)
+			margin: 0 40px
+		+r(750)
+			padding-top: 40px 
+			padding-bottom: 40px 
+	.flats__left
+		float: left
+	.flats__section,.flats__rooms
+		display: inline-block
+		margin-right: 40px
+		margin-bottom: 35px
+		h3
+			display: block
+			margin-bottom: 10px
+			font-size: 14px
+			color: #191821
+			+light
+		a
+			display: inline-block
+			border: 1px solid #B5B5B5
+			font-size: 14px
+			height: 38px
+			line-height: 38px
+			border-radius: 3px
+			width: 50px
+			text-decoration: none
+			text-align: center
+			color: #b5b5b5
+			+med
+			&.is-long
+				padding: 0 40px
+				width: auto
+			&.is-active,&:hover
+				background: #b5b5b5
+				color: #fff
+	.flats__rooms
+		display: inline-block
+	.flats__result
+		+med
+		font-size: 18px
+		color: #a59767
+		line-height: 1
+		text-transform: uppercase
+		margin-bottom: 28px
+	.flats__type
+		font-size: 14px
+		+med
+		margin-bottom: 130px
+		color: #a59767
+		+r(750)
+			margin-bottom: 30px 
+		a
+			color: #b5b5b5
+			&.is-active
+				color: #a59767
+	.clr
+		clear: both
+	.flats__text
+		font-size: 12px
+		color: #191821
+		+light
+		line-height: 1.2
+		width: 160px
+	.flats__metr
+		float: right
+		width: 230px
+		+r(750)
+			float: none
+			margin-top: 20px 
+		table
+			margin-bottom: 50px
+			td,th
+				font-weight: normal
+				font-size: 12px
+				color: #191821
+				line-height: 1.1
+				text-align: left
+			td
+				text-align: right
+			tfoot
+				td,th
+					padding-top: 12px
+					+med
+					color: #b8aa88
+		.flats__pdf
+			font-size: 14px
+			+med
+			color: #d30b16
+	.flats__image
+		position: absolute
+		left: 250px 
+		+r(1000)
+			position: static
+			float: left
+			width: 40% 
+		+r(750)
+			float: none
+			width: auto
+		img
+			+r(1000)
+				display: block
+				width: 100% 

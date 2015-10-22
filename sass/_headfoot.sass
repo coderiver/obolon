@@ -1,0 +1,250 @@
+.navf
+	position: fixed
+	top: 0
+	left: 0 
+	right: 0 
+	background: #fff 
+	z-index: 100 
+	transform: translate(0,-45px)
+	transition: transform .3s linear
+	box-shadow: 0 0 5px rgba(#000,.5)
+	.is-menu &
+		transform: translate(0,0)
+	+r(630)
+		display: none
+	.navf__in
+		max-width: 1000px 
+		margin: 0 auto 
+		height: 40px 
+		+r(1040)
+			margin: 0 20px 
+		ul
+			+justify
+		li
+			display: inline-block
+			font-size: 20px 
+		a
+			display: inline-block
+			text-transform: uppercase
+			color: #a59767
+			text-decoration: none
+			font-size: 12px
+			height: 40px
+			line-height: 40px 
+			&:hover,&.is-active
+				color: #191821
+.header
+	.header__top
+		border-bottom: 1px solid #A59767
+		height: 97px
+		position: relative
+		+r(968)
+			height: 200px
+		+r(450)
+			border: none
+			height: auto
+		.header__logo
+			position: absolute
+			left: 50%
+			top: 0
+			margin-left: -100px
+			display: block
+			text-decoration: none
+			+s(logo)
+			cursor: pointer
+			+r(968)
+				left: 0
+				margin-left: 0
+			+r(450)
+				margin: 0 auto
+				position: static
+	.header__in
+		max-width: 1040px
+		margin: 0 auto
+	.header__bottom
+		position: relative
+		height: 52px
+		+clr
+		+r(782)
+			height: auto
+	.nav
+		font-size: 12px
+		text-transform: uppercase
+		text-decoration: none
+		list-style: none
+		+light
+		font-size: 0
+		float: left
+		+r(450)
+			width: 50%
+		&.nav_right
+			float: right
+			+r(782)
+				float: left
+		li
+			display: inline-block
+			+r(780)
+				display: block
+		a
+			color: #a59767
+			text-decoration: none
+			height: 52px
+			line-height: 52px
+			padding: 0 25px
+			font-size: 12px
+			+r(450)
+				text-align: center
+				display: block
+			&:hover,&.is-active
+				color: #191821
+	.header__book
+		position: absolute
+		bottom: -1px
+		background: #8e1519
+		font-size: 14px
+		+light
+		height: 40px
+		line-height: 40px
+		padding: 0 16px
+		color: #fff
+		right: 38px
+		+r(450)
+			display: block
+			position: static
+			text-align: center
+		&:hover
+			text-decoration: none
+	.header__lang
+		position: absolute
+		right: 5px
+		bottom: 15px
+		font-size: 14px
+		+light
+		+r(450)
+			bottom: auto
+			top: 15px
+		a
+			text-decoration: none
+			color: #a6a6a6
+			display: block
+			&:hover
+				color: #000
+	.header__tel
+		position: absolute
+		right: 38px + 16px
+		+med
+		font-size: 18px
+		color: #383431
+		bottom: 45px
+		+r(450)
+			position: static
+			text-align: center
+
+
+.subheader
+	.slide
+		position: absolute
+		bottom: 0
+		top: 0
+		right: 0
+		left: 0
+		background-position: 0 50%
+		background-repeat: no-repeat
+		background-size: cover
+
+
+.footer
+	background: #181720
+	padding: 66px 0 100px 0
+	.footer__in
+		max-width: 1000px
+		margin: 0 auto
+		+clr
+		+r(1080)
+			margin: 0 40px
+	.footer__fb
+		float: left
+		width: 33%
+		+box
+		padding-right: 40px
+		+r(930)
+			display: none
+		img
+			width: 100%
+			display: block
+	.footer__content
+		width: 66%
+		float: right
+		+r(930)
+			float: none
+			width: auto
+		h2
+			font-size: 24px
+			line-height: 1
+			margin-bottom: 14px
+			+thin
+			text-transform: uppercase
+			color: #fff
+	.footer__contactscol
+		float: left
+		padding-bottom: 30px
+		width: 50%
+		font-size: 14px
+		line-height: 1.4
+		color: #fff
+		+light
+		+r(500)
+			float: none
+			width: auto
+		p
+			margin-bottom: 18px
+			a
+				color: #fff 
+				text-decoration: none
+		em
+			font-size: 18px 
+			font-style: normal 
+
+		strong
+			font-weight: normal
+			+med
+			color: #a59767
+			display: block
+.ask
+	background: #a59767 
+	padding: 31px 20px 24px 20px 
+	clear: both
+	.ask__in
+		width: 350px 
+		margin: 0 auto 
+		text-align: center
+		+r(500)
+			width: auto
+	input[type=text],textarea
+		+box
+		display: block
+		width: 100%
+		padding: 0 11px
+		height: 30px 
+		background: #fff 
+		margin-bottom: 5px 
+		border: none
+		font-size: 14px 
+		+light
+		color: #808184 
+	textarea
+		height: 70px 
+		padding: 5px 11px
+
+	input[type=submit]
+		background: #ad1d21 
+		-webkit-appearance: none
+		text-transform: uppercase
+		height: 50px 
+		margin-top: 20px 
+		width: 225px 
+		font-size: 14px 
+		+med
+		line-height: 50px
+		border-radius: 4px
+		color: #fff 

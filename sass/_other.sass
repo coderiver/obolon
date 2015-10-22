@@ -1,0 +1,90 @@
+.dragon
+	background: #fff url(../img/bg.jpg) no-repeat 100% 0
+	background-size: auto 100%
+	+light
+	font-size: 14px
+	line-height: 1.4
+	color: #191821
+	+r(600)
+		background: none
+	.dragon__in
+		max-width: 1000px
+		margin: 0 auto
+		padding: 124px 0 115px 0
+		+clr
+		+r(1080)
+			margin: 0 40px
+		+r(600)
+			padding-top: 60px
+			padding-bottom: 60px
+	p
+		margin-bottom: 15px
+	.dragon__logo
+		margin-left: -15px
+		margin-bottom: 20px
+		img
+			width: 50%
+			display: block
+			+r(600)
+				width: 280px
+				margin-left: 6px
+	.dragon__two
+		// -webkit-column-count: 3
+		// -webkit-column-gap: 40px
+		.col
+			width: 33%
+			+box
+			float: left
+			padding-right: 40px
+			+r(920)
+				float: none
+				width: auto
+				padding-right: 0
+.cameras
+	+clr
+	.camera
+		float: left
+		width: 50%
+		padding-bottom: 20%
+		position: relative
+		background-size: cover
+		background-position: 50% 50%
+		overflow: hidden
+		color: #fff 
+		font-size: 14px 
+		+med
+		+r(600)
+			width: 100%
+			padding-bottom: 40% 
+		.camera__in
+			position: absolute
+			left: 50%
+			top: 50%
+			transform: translate(-50%,-50%)
+			text-align: center
+			display: inline-block
+		h3
+			text-transform: uppercase
+			font-size: 24px 
+			+thin
+		&:hover
+			.camera__pic
+				transform: scale(1.1)
+				&:before
+					background: rgba(#000,.8)
+		.camera__pic
+			position: absolute
+			left: 0
+			top: 0
+			bottom: 0
+			right: 0
+			transition: all .3s linear
+			&:before
+				content: ' '
+				position: absolute
+				left: 0
+				right: 0
+				bottom: 0
+				top: 0
+				background: rgba(#000,.4)
+				transition: all .3s linear
