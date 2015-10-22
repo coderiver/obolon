@@ -3,7 +3,7 @@ head.ready(function() {
 		$('#'+$(this).data('popup')).fadeIn();
 		return false;
 	});
-	$('.overlay-click,.feat__close,.ask__close').click(function(event) {
+	$('.overlay-click,.feat__close,.ask__close,.camerapopup__close').click(function(event) {
 		$(this).parents('.overlay').hide();
 	});
 	$('.slideshow__close').click(function(event) {
