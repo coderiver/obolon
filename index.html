@@ -243,7 +243,7 @@
 <!-- begin cameras  -->
 <div class="cameras" data-section="true" id="gallery">
 	<!-- begin camera  -->
-	<a href="#" class="camera" >
+	<a href="#" class="camera js-popup" data-popup="camera" >
 		<div class="camera__pic" style="background: url(img/bg1.jpg)"></div>
 		<div class="camera__in">
 			<h3>ВЕБ-КАМЕРа</h3>
@@ -252,7 +252,7 @@
 	</a>
 	<!-- end camera -->
 	<!-- begin camera  -->
-	<a href="#" class="camera">
+	<a href="#" class="camera js-popup" data-popup="gallery1">
 		<div class="camera__pic" style="background: url(img/bg2.jpg)"></div>
 		<div class="camera__in">
 			<h3>ГАЛЕРЕЯ</h3>
@@ -534,6 +534,72 @@
 	</div>
 </div>
 <!-- end overlay feature -->
+
+<!-- begin overlay feature  -->
+<div class="overlay camerapopup" id="camera">
+	<div class="overlay-click"></div>
+	<div class="popup">
+		<div class="camerapopup__close"></div>
+		<script type="html/text">
+					<div class="blured" style="position: absolute; z-index: 1; left: 0;"><img id="cam2" src="/assets/dist/img/cam2-day.jpg"></div>
+					<div class="obj-box">
+						<OBJECT style="width: 450px; height: 366px" id=RtspVapgCtrl
+								codeBase="/RtspVaPgDecNew.cab#version=1,0,0,39" standby="Loading plug-in..."
+								classid=CLSID:73888E2B-FF04-416c-8847-984D7FC4507F width=450 height=366
+								Stretch="true">
+							<PARAM NAME="Url" VALUE="rtsp://user:user@31.43.111.146/live.sdp">
+							<PARAM NAME="ControlType" VALUE="0">
+							<PARAM NAME="ClientOptions" VALUE="639">
+							<PARAM NAME="ViewStream" VALUE="0">
+							<PARAM NAME="VSize" VALUE="CMS">
+							<PARAM NAME="JoystickSpeedLvs" VALUE="5">
+							<PARAM NAME="MP4Conversion" VALUE="true">
+							<PARAM NAME="RemoteID" VALUE="0">
+							<PARAM NAME="RemoteIPAddr" VALUE="31.43.111.146">
+							<PARAM NAME="UserDateFormat" VALUE="0">
+							<PARAM NAME="FlipMaskWnd" VALUE="0">
+							<PARAM NAME="MirrorMaskaWnd" VALUE="0">
+							<PARAM NAME="Deinterlace" VALUE="0">
+							<PARAM NAME="ShowMP4StatusInCaption" VALUE="0">
+							<PARAM NAME="AutoReStartMP4Recording" VALUE="0">
+							<PARAM NAME="PlayMute" VALUE="0">
+							<PARAM NAME="IgnoreBorder" VALUE="1">
+							<PARAM NAME="IgnoreCaption" VALUE="1">
+							<PARAM NAME="NoAudio" VALUE="1">
+						</OBJECT>
+					</div>
+
+                </script>
+                <img data-stream-src="http://31.43.111.146/video2.mjpg" width="800" height="600" style="width: 450px; height: 366px;" src="http://31.43.111.146/video2.mjpg">
+	</div>
+</div>
+<!-- end overlay feature -->
+
+
+<div id="gallery1" class="slideshow cycle-slideshow" 
+	data-cycle-fx="scrollHorz" 
+    data-cycle-timeout="0"
+    data-cycle-slides="> .slideshow__slide"
+    data-cycle-prev=".slideshow__prev"
+    data-cycle-next=".slideshow__next"
+        >
+
+	<div class="slideshow__slide" style="background-image: url(img/g/Gallery_01.jpg);"></div>
+	<div class="slideshow__slide" style="background-image: url(img/g/Gallery_02.jpg);"></div>
+	<div class="slideshow__slide" style="background-image: url(img/g/Gallery_03.jpg);"></div>
+	<div class="slideshow__slide" style="background-image: url(img/g/Gallery_04.jpg);"></div>
+	<div class="slideshow__slide" style="background-image: url(img/g/Gallery_05.jpg);"></div>
+	<div class="slideshow__slide" style="background-image: url(img/g/Gallery_06.jpg);"></div>
+	<div class="slideshow__slide" style="background-image: url(img/g/Gallery_07.jpg);"></div>
+	<div class="slideshow__slide" style="background-image: url(img/g/Gallery_08.jpg);"></div>
+	<div class="slideshow__slide" style="background-image: url(img/g/Gallery_09.jpg);"></div>
+	<div class="slideshow__slide" style="background-image: url(img/g/Gallery_10.jpg);"></div>
+	<div class="slideshow__next"></div>
+	<div class="slideshow__prev"></div>
+	<div class="slideshow__close"></div>
+</div>
+<!-- end slideshow -->
+
 <!-- load scripts -->
 <script src="js/lib/head.js" data-headjs-load="js/init.js"></script>
 </body>

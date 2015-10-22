@@ -23,6 +23,10 @@
 		border-radius: 200px
 		margin-bottom: 10px
 		position: relative
+		background-position: 50% 50% 
+		-webkit-background-size: 100% auto 
+		-o-background-size: 100% auto 
+		background-size: 100% auto 
 	.feature__more
 		height: 130px
 		width: 130px
@@ -40,6 +44,24 @@
 	&:hover
 		.feature__more
 			opacity: 1
+.camerapopup
+	.popup
+		position: relative
+	img
+		width: 800px !important
+		height: 600px !important
+		+r(800)
+			width: 320px !important
+			height: 250px !important
+	.camerapopup__close
+		position: absolute
+		right: 20px 
+		top: 20px 
+		+s(close3)
+		cursor: pointer
+	iframe
+		width: 500px 
+		height: 300px 
 .map
 	iframe
 		width: 100% !important

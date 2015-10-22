@@ -1,0 +1,59 @@
+.slideshow
+	position: fixed
+	z-index: 2000 
+	top: 0
+	left: 0
+	width: 100%
+	height: 100%
+	display: none
+	.slideshow__slide
+		width: 100%
+		height: 100vh  
+		-webkit-background-size: cover 
+		-o-background-size: cover 
+		background-size: cover 
+		background-repeat: no-repeat 
+		background-position: 50% 50% 
+		background-color: #000 
+		+r(700)
+			-webkit-background-size: contain 
+			-o-background-size: contain 
+			background-size: contain 
+	.slideshow__text
+		text-align: center
+		position: absolute
+		width: 100% 
+		bottom: 87px 
+		font-size: 60px 
+		color: #fff 
+		font-weight: normal
+		line-height: 1
+		+r(600)
+			font-size: 26px 
+			bottom: 0
+			top: 50px  
+	.slideshow__prev,.slideshow__next,.slideshow__close
+		position: absolute
+		bottom: 30px 
+		background: rgba(#000,.6)    
+		transition: all .2s linear
+		z-index: 200 
+		cursor: pointer
+		+r(600)
+			transform: scale(.5)
+			bottom: 0 
+		&:hover
+			opacity: .8 
+			
+	.slideshow__close
+		top: 30px 
+		right: 30px 
+		+s(close4)
+
+	.slideshow__prev
+		+s(prev)
+		left: 30px 
+	.slideshow__next
+		right: 30px 
+		+s(next)
+		

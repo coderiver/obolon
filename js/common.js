@@ -6,6 +6,10 @@ head.ready(function() {
 	$('.overlay-click,.feat__close,.ask__close').click(function(event) {
 		$(this).parents('.overlay').hide();
 	});
+	$('.slideshow__close').click(function(event) {
+		$('.slideshow').fadeOut();
+	});
+
 
 	$(window).scroll(function(){
 	    if($(window).scrollTop()>300){
