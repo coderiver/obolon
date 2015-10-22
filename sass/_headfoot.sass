@@ -224,6 +224,22 @@
 	background: #a59767 
 	padding: 31px 20px 24px 20px 
 	clear: both
+	&.ask_popup
+		width: 600px 
+		+r(800)
+			width: auto
+		.ask__close
+			float: right
+			+s(close)
+			cursor: pointer
+			margin-top: 3px 
+		h2
+			font-size: 18px 
+			margin-bottom: 16px 
+			text-align: left
+			color: #fff 
+			+thin
+			text-transform: uppercase
 	.ask__in
 		width: 350px 
 		margin: 0 auto 

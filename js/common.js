@@ -1,5 +1,11 @@
 head.ready(function() {
-
+	$('.js-popup').click(function(event) {
+		$('#'+$(this).data('popup')).fadeIn();
+		return false;
+	});
+	$('.overlay-click,.feat__close,.ask__close').click(function(event) {
+		$(this).parents('.overlay').hide();
+	});
 
 	$(window).scroll(function(){
 	    if($(window).scrollTop()>300){

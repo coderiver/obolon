@@ -33,7 +33,7 @@
 	<div class="header__top"><div class="header__in">
 		<a href='#home' class="header__logo"></a>
 		<div class="header__tel">+38 (044) 498-26-26</div>
-		<a href="#" class="header__book">Записаться на просмотр</a>
+		<a href="#" class="header__book js-popup" data-popup="book">Записаться на просмотр</a>
 		<div class="header__lang">
 			<a href="#">рус</a>
 			<a href="#">укр</a>
@@ -62,8 +62,11 @@
     data-cycle-timeout="3000"
     data-cycle-speed='2000'
     data-cycle-slides="> div">
-	<div class="slide" style="background-image: url(img/picture.jpg)"></div>
-	<div class="slide" style="background-image: url(http://placehold.it/1200x900)"></div>
+	<div class="slide" style="background-image: url(img/s/1.jpg)"></div>
+	<div class="slide" style="background-image: url(img/s/2.jpg)"></div>
+	<div class="slide" style="background-image: url(img/s/3.jpg)"></div>
+	<div class="slide" style="background-image: url(img/s/4.jpg)"></div>
+	
 </div>
 <!-- end subheader -->
 
@@ -106,18 +109,18 @@
 <div class="features" data-section="true" id="features">
 	<div class="features__in">
 		<ul>
-			<li class="feature"><a href="#"><div class="feature__pic" style="background-image: url(http://placehold.it/200x200)"><div class="feature__more">Подробнее</div></div> <span class="feature__title">Консьерж-сервис</span></a></li>
-			<li class="feature"><a href="#"><div class="feature__pic" style="background-image: url(http://placehold.it/200x200)"><div class="feature__more">Подробнее</div></div> <span class="feature__title">Спортзал</span></a></li>
-			<li class="feature"><a href="#"><div class="feature__pic" style="background-image: url(http://placehold.it/200x200)"><div class="feature__more">Подробнее</div></div> <span class="feature__title">
+			<li class="feature"><a href="#" class="js-popup" data-popup="feat1"><div class="feature__pic" style="background-image: url(img/f/1.jpg)"><div class="feature__more">Подробнее</div></div> <span class="feature__title">Консьерж-сервис</span></a></li>
+			<li class="feature"><a href="#" class="js-popup" data-popup="feat2"><div class="feature__pic" style="background-image: url(img/f/2.jpg)"><div class="feature__more">Подробнее</div></div> <span class="feature__title">Спортзал</span></a></li>
+			<li class="feature"><a href="#" class="js-popup" data-popup="feat3"><div class="feature__pic" style="background-image: url(img/f/3.jpg)"><div class="feature__more">Подробнее</div></div> <span class="feature__title">
 Конференц-комната</span></a></li>
-			<li class="feature"><a href="#"><div class="feature__pic" style="background-image: url(http://placehold.it/200x200)"><div class="feature__more">Подробнее</div></div> <span class="feature__title">
+			<li class="feature"><a href="#" class="js-popup" data-popup="feat4"><div class="feature__pic" style="background-image: url(img/f/4.jpg)"><div class="feature__more">Подробнее</div></div> <span class="feature__title">
 Лаунж зона
 на крыше</span></a></li>
-			<li class="feature"><a href="#"><div class="feature__pic" style="background-image: url(http://placehold.it/200x200)"><div class="feature__more">Подробнее</div></div> <span class="feature__title">
+			<li class="feature"><a href="#" class="js-popup" data-popup="feat5"><div class="feature__pic" style="background-image: url(img/f/5.jpg)"><div class="feature__more">Подробнее</div></div> <span class="feature__title">
 Детская комната</span></a></li>
-			<li class="feature"><a href="#"><div class="feature__pic" style="background-image: url(http://placehold.it/200x200)"><div class="feature__more">Подробнее</div></div> <span class="feature__title">
+			<li class="feature"><a href="#" class="js-popup" data-popup="feat6"><div class="feature__pic" style="background-image: url(img/f/6.jpg)"><div class="feature__more">Подробнее</div></div> <span class="feature__title">
 Прачечная</span></a></li>
-			<li class="feature"><a href="#"><div class="feature__pic" style="background-image: url(http://placehold.it/200x200)"><div class="feature__more">Подробнее</div></div> <span class="feature__title">
+			<li class="feature"><a href="#" class="js-popup" data-popup="feat7"><div class="feature__pic" style="background-image: url(img/f/7.jpg)"><div class="feature__more">Подробнее</div></div> <span class="feature__title">
 Студия дизайна</span></a></li>
 		</ul>
 	</div>
@@ -126,7 +129,44 @@
 
 <!-- begin map  -->
 <div class="map" data-section="true" id="location">
-	<iframe frameborder="0" scrolling="no" marginheight="0" marginwidth="0"width="642" height="350" src="https://maps.google.com/maps?hl=en&q=Pariser Platz, 10117 Berlin&ie=UTF8&t=roadmap&z=13&iwloc=B&output=embed"><div><small><a href="http://embedgooglemaps.com">embedgooglemaps.com</a></small></div><div><small><a href="http://www.premiumlinkgenerator.com/">visit this website</a></small></div></iframe>
+<div id="map" style="height: 350px;"></div>
+	<script>
+		var map;
+		function initMap() {
+			var myLatLng = {lat: 50.5075895, lng: 30.498414300000036};
+			var customMapType = new google.maps.StyledMapType([
+					{
+						stylers: [
+							{hue: '#becbcd'},
+							{weight: 1.5}
+						]
+					}
+				], {
+					name: 'Custom Style'
+			});
+			var customMapTypeId = 'custom_style';
+			var map = new google.maps.Map(document.getElementById('map'), {
+				zoom: 16,
+				center: myLatLng,
+				// disableDefaultUI: true,
+				zoomControl: true,
+				scrollwheel: false,
+				// draggable: false,
+				mapTypeControlOptions: {
+					mapTypeIds: [google.maps.MapTypeId.ROADMAP, customMapTypeId]
+				}
+			});
+			var iconBase = 'img/m/';
+			var marker = new google.maps.Marker({
+				position: myLatLng,
+				map: map,
+				icon: iconBase + 'dream.png'
+			});
+			map.mapTypes.set(customMapTypeId, customMapType);
+			map.setMapTypeId(customMapTypeId);
+		}
+	</script>
+	<script src="http://maps.googleapis.com/maps/api/js?key=AIzaSyCPLx_osAJ33YNibIjaqX9uH5kbYIlNJVY&callback=initMap" async defer></script>
 </div>
 <!-- end map -->
 
@@ -259,7 +299,7 @@
 			  js.src = "//connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v2.5&appId=1457049151248753";
 			  fjs.parentNode.insertBefore(js, fjs);
 			}(document, 'script', 'facebook-jssdk'));</script>
-			<div class="fb-page" data-href="https://www.facebook.com/ObolonResidences" data-width="200" data-height="500" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true" data-show-posts="true"><div class="fb-xfbml-parse-ignore"><blockquote cite="https://www.facebook.com/ObolonResidences"><a href="https://www.facebook.com/ObolonResidences">Obolon Residences</a></blockquote></div></div>
+			<div class="fb-page" data-href="https://www.facebook.com/ObolonResidences" data-width="500" data-height="500" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true" data-show-posts="true"><div class="fb-xfbml-parse-ignore"><blockquote cite="https://www.facebook.com/ObolonResidences"><a href="https://www.facebook.com/ObolonResidences">Obolon Residences</a></blockquote></div></div>
 		</div>
 		<div class="footer__content">
 			<!-- begin contacts -->
@@ -305,6 +345,195 @@
 
 </div>
 <!-- END out-->
+
+<!-- begin overlay book  -->
+<div class="overlay book" id="book">
+	<div class="overlay-click"></div>
+	<div class="popup">
+		<!-- begin ask  -->
+		<div class="ask ask_popup">
+			<div class="ask__in">
+				<div class="ask__close"></div>
+				<h2>ЗАДАТЬ ВОПРОС</h2>
+				<input type="text" name="" placeholder="Введите Имя" id="">
+				<input type="text" name="" placeholder="Введите e-mail/телефон" id="">
+				<textarea placeholder="Введите коментарий" id=""></textarea>
+				<input type="submit" value="ОТПРАВИТЬ">
+			</div>
+		</div>
+		<!-- end ask -->
+	</div>
+</div>
+<!-- end overlay book -->
+<!-- begin overlay feature  -->
+<div class="overlay popupfeature" id="feat1">
+	<div class="overlay-click"></div>
+	<div class="popup">
+		<div class="feat">
+			<div class="feat__pic" style="background-image:url(img/f/1.jpg)">
+				
+			</div>
+			<div class="feat__text">
+				<div class="feat__close"></div>
+				<h3>НЕПОВТОРИМЫЙ СТИЛЬ ЖИЗНИ</h3>
+
+
+				<p>Самое главное для нас – обеспечить комфорт
+				и безопасность наших жителей. </p>
+
+				<p>Наши сотрудники на высоком профессиональном
+				уровне предоставят Вам следующие услуги:</p>
+				<ul>
+					<li>стирка и химчистка</li>
+					<li>услуги горничной</li>
+					<li>уход за детьми</li>
+					<li>ремонт обуви и одежды</li>
+					<li>транспортные услуги и аренда автомобиля с водителем</li>
+					<li>бронирование ресторанов</li>
+					<li>организация доставки</li>
+					<li>общие справочные услуги</li>
+				</ul>
+
+				<p>Сотрудники  reception  известят Вас о прибытии гостей и,
+				получив Ваше личное подтверждение, проводят  их до лифта.</p>
+
+				<p>Круглосуточная охрана осуществляется высококвалифицированным персоналом посредством системы видеонаблюдения, с уважением
+				к Вашей частной жизни.</p>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- end overlay feature -->
+<!-- begin overlay feature  -->
+<div class="overlay popupfeature" id="feat2">
+	<div class="overlay-click"></div>
+	<div class="popup">
+		<div class="feat">
+			<div class="feat__pic" style="background-image:url(img/f/2.jpg)">
+				
+			</div>
+			<div class="feat__text">
+				<div class="feat__close"></div>
+				<h3>WELLNESS & FITNESS – У ВАС ДОМА</h3>
+				<p>Жизнь деловых людей полна динамики и движения, поэтому зачастую трудно найти время для занятий спортом – но не в Obolon Residences. Заботясь о здоровье и экономии времени наших жителей, мы предлагаем им бесплатно воспользоваться в удобное время, до или после рабочего дня, частным фитнес-залом на 26 этаже, откуда открываются захватывающие виды на город. </p>
+				<p>Зал оборудован в соответствии с последними тенденциями в сфере фитнеса, современными комнатами для переодевания и расслабляющими душевыми с органической косметикой. По Вашему желанию консьерж-сервис поможет заказать услугу личного тренера. </p>
+				<p>Комфортная и стильная обстановка для Ваших спортивных достижений – в Вашем доме.</p>
+				</p>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- end overlay feature -->
+<!-- begin overlay feature  -->
+<div class="overlay popupfeature" id="feat3">
+	<div class="overlay-click"></div>
+	<div class="popup">
+		<div class="feat">
+			<div class="feat__pic" style="background-image:url(img/f/3.jpg)">
+				
+			</div>
+			<div class="feat__text">
+				<div class="feat__close"></div>
+				<h3>ВСЕ ДЛЯ БИЗНЕСА</h3>
+				<p>Представьте себе, что все необходимое для бизнеса – на расстоянии вытянутой руки 24 часа в сутки. Obolon Residences предлагает своим жителям бесплатно воспользоваться современным конференц-залом на 26 этаже для организации бизнес-мероприятий или частных встреч. </p>
+				<p>К Вашим услугам все необходимое современное оборудование:</p>
+				<ul>
+					<li>конференц-телефония
+					<li>устройство для проведения телеконференций
+					<li>принтер/сканер
+					<li>скоростной Wi-Fi
+					<li>телепроектор с большим экраном
+				</li>
+				<p>Ваших гостей встретит приветливый администратор на отдельной стойке reception в приемной, где также можно будет предварительно заказать напитки и канцелярию – комплексное решение для Вашего успеха.
+</p>
+				</p>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- end overlay feature -->
+<!-- begin overlay feature  -->
+<div class="overlay popupfeature" id="feat4">
+	<div class="overlay-click"></div>
+	<div class="popup">
+		<div class="feat">
+			<div class="feat__pic" style="background-image:url(img/f/4.jpg)">
+				
+			</div>
+			<div class="feat__text">
+				<div class="feat__close"></div>
+				<h3>ЛАУНЖ-ЗОНА НА КРЫШЕ</h3>
+				<p>Открывая виды на горизонты столицы сквозь прозрачное стекло балконов, наш сезонный сад на крыше подарит Вам незабываемую атмосферу для вечера под звездным небом или солнечных ванн в теплый летний день. Этот воздушный оазис отдыха располагается на крыше всех трех зданий и предназначен исключительно для жителей и их гостей. </p>
+				<p>Ощутить всю прелесть и красоту жизни, расслабиться в непринужденной, приватной обстановке, Вы сможете в джакузи, откуда открывается завораживающий вид на город.</p>
+				<p>Спокойная и элегантная обстановка дополнена шезлонгами в стиле Ривьеры, стильными зонтами цвета слоновой кости и кованой мебелью на гладкой деревянной террасе – это настоящий рай для роскошного отдыха. </p>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- end overlay feature -->
+<!-- begin overlay feature  -->
+<div class="overlay popupfeature" id="feat5">
+	<div class="overlay-click"></div>
+	<div class="popup">
+		<div class="feat">
+			<div class="feat__pic" style="background-image:url(img/f/5.jpg)">
+				
+			</div>
+			<div class="feat__text">
+				<div class="feat__close"></div>
+				<h3>ЗАБОТА О ВАШИХ ДЕТЯХ</h3>
+				<p>Obolon Residences предлагает наилучшие условия для комфортной жизни каждому своему жителю, вне зависимости от его возраста. Вашим малышам понравятся бесконечные игры и веселая атмосфера чудесной детской комнаты, которая предоставляется только для жителей. </p>
+				<p>Игрушки, книги, карандаши и спортивные снаряды займут Ваших деток, а Вы сможете сосредоточиться на своих делах. Комната будет оборудована web-камерой с возможностью доступа прямо из Вашей квартиры или любого удаленного доступа с интернет-устройства в любое время, так что Вам не придется переживать о безопасности Вашего ребенка.</p>
+				<p>Услуги няни Вы сможете заказать с помощью консьерж-сервиса.</p>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- end overlay feature -->
+<!-- begin overlay feature  -->
+<div class="overlay popupfeature" id="feat6">
+	<div class="overlay-click"></div>
+	<div class="popup">
+		<div class="feat">
+			<div class="feat__pic" style="background-image:url(img/f/6.jpg)">
+				
+			</div>
+			<div class="feat__text">
+				<div class="feat__close"></div>
+				<h3>ПРОФЕССИОНАЛЬНАЯ ПРАЧЕЧНАЯ</h3>
+				<p>В традициях лучших жилых комплексов мировых столиц в Obolon Residences работает полноформатная прачечная с профессиональным моющим и сушильным оборудованием. </p>
+				<p>У каждого жителя будет личная laundry-карта для пользования прачечной. Активировать и пополнять карту можно с помощью платежного терминала непосредственно в здании комплекса. Прачечная располагается на 26 этаже и для Вашего удобства и безопасности оборудована web-камерой с возможностью удаленного подключения.</p>
+				<p>Мы позаботимся о Вас, а Вы насладитесь абсолютным комфортом. </p>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- end overlay feature -->
+<!-- begin overlay feature  -->
+<div class="overlay popupfeature" id="feat7">
+	<div class="overlay-click"></div>
+	<div class="popup">
+		<div class="feat">
+			<div class="feat__pic" style="background-image:url(img/f/7.jpg)">
+				
+			</div>
+			<div class="feat__text">
+				<div class="feat__close"></div>
+				<h3>СТУДИЯ ДИЗАЙНА</h3>
+				<p>Команда профессиональных архитекторов и дизайнеров студии дизайна Obolon Residences  создаст для Вас неповторимый интерьер, позаботившись о комфорте всех жителей квартиры и оптимально используя каждый квадратный метр.</p>
+			<p>Вы можете заказать: </p>
+			<ul>
+			<li>Индивидуальный дизайн</li>
+			<li>Авторский надзор</li>
+			<li>Технический надзор</li>
+			<li>Менеджмент проекта</li>
+			<li>Проведение тендеров по строительным работам</li>
+			</ul>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- end overlay feature -->
 <!-- load scripts -->
 <script src="js/lib/head.js" data-headjs-load="js/init.js"></script>
 </body>
