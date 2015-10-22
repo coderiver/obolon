@@ -142,9 +142,10 @@ body { font-family: Arial, sans-serif; font-size: 12px; line-height: 1.4; font-f
 .feature { display: inline-block; margin: 0 20px; margin-bottom: 27px; }
 .feature a { text-decoration: none; color: black; font-size: 18px; font-family: "thin", sans-serif; }
 .feature a:hover { text-decoration: underline; }
-.feature .feature__pic { width: 200px; height: 200px; border-radius: 200px; margin-bottom: 10px; position: relative; background-position: 50% 50%; -webkit-background-size: 100% auto; -o-background-size: 100% auto; background-size: 100% auto; }
+.feature .feature__pic { width: 200px; height: 200px; border-radius: 200px; margin-bottom: 10px; position: relative; background-position: 50% 50%; -webkit-background-size: 100% auto; -o-background-size: 100% auto; background-size: 100% auto; transition: all 0.2s linear; }
 .feature .feature__more { height: 130px; width: 130px; line-height: 130px; text-align: center; position: absolute; left: 35px; font-size: 18px; color: white; top: 35px; background: rgba(181, 181, 181, 0.6); opacity: 0; transition: all 0.2s linear; border-radius: 130px; }
 .feature:hover .feature__more { opacity: 1; }
+.feature:hover .feature__pic { transform: scale(1.1); }
 
 .camerapopup .popup { position: relative; }
 .camerapopup img { width: 800px !important; height: 600px !important; }
