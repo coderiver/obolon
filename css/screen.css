@@ -49,13 +49,16 @@ body { font-family: Arial, sans-serif; font-size: 12px; line-height: 1.4; font-f
 .navf .navf__in a { display: inline-block; text-transform: uppercase; color: #a59767; text-decoration: none; font-size: 12px; height: 40px; line-height: 40px; }
 .navf .navf__in a:hover, .navf .navf__in a.is-active { color: #191821; }
 
-.header .header__top { border-bottom: 1px solid #a59767; height: 97px; position: relative; }
-@media only screen and (max-width: 968px) { .header .header__top { height: 200px; } }
-@media only screen and (max-width: 450px) { .header .header__top { border: none; height: auto; } }
+.header { position: relative; z-index: 100; }
+.header .header__top { position: relative; z-index: 100; border-bottom: 1px solid #a59767; }
+@media only screen and (max-width: 450px) { .header .header__top { border: none; } }
+.header .header__top .header__in { height: 97px; }
+@media only screen and (max-width: 968px) { .header .header__top .header__in { height: 200px; } }
+@media only screen and (max-width: 450px) { .header .header__top .header__in { border: none; height: auto; } }
 .header .header__top .header__logo { position: absolute; left: 50%; top: 0; margin-left: -100px; display: block; text-decoration: none; background: url('../img/icons-s5ff4473711.png') 0 -418px no-repeat; width: 202px; height: 201px; cursor: pointer; }
 @media only screen and (max-width: 968px) { .header .header__top .header__logo { left: 0; margin-left: 0; } }
 @media only screen and (max-width: 450px) { .header .header__top .header__logo { margin: 0 auto; position: static; } }
-.header .header__in { max-width: 1040px; margin: 0 auto; }
+.header .header__in { max-width: 1040px; margin: 0 auto; position: relative; }
 .header .header__bottom { position: relative; height: 52px; *zoom: 1; }
 .header .header__bottom:after { content: " "; display: table; clear: both; }
 @media only screen and (max-width: 782px) { .header .header__bottom { height: auto; } }
@@ -78,6 +81,7 @@ body { font-family: Arial, sans-serif; font-size: 12px; line-height: 1.4; font-f
 .header .header__tel { position: absolute; right: 54px; font-family: "med", sans-serif; font-size: 18px; color: #383431; bottom: 45px; }
 @media only screen and (max-width: 450px) { .header .header__tel { position: static; text-align: center; } }
 
+.subheader { position: relative; z-index: 50; }
 .subheader .slide { position: absolute; bottom: 0; top: 0; right: 0; left: 0; background-position: 0 50%; background-repeat: no-repeat; background-size: cover; }
 
 .footer { background: #181720; padding: 66px 0 100px 0; }
