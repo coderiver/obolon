@@ -26,6 +26,12 @@
 .feat
 	background: #fff
 	max-width: 1000px
+	.feat__close
+		position: absolute
+		right: 32px 
+		top: 30px 
+		+s(close1)
+		cursor: pointer
 	.feat__text
 		margin-left: 380px
 		+light
@@ -37,12 +43,7 @@
 		+r(750)
 			margin-left: 0
 			padding-left: 40px  
-		.feat__close
-			position: absolute
-			right: 32px 
-			top: 30px 
-			+s(close1)
-			cursor: pointer
+		
 		h3
 			font-size: 24px
 			+thin

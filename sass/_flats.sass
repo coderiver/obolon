@@ -106,6 +106,8 @@
 		text-align: center
 		+med
 		color: #b5b5b5 
+		img
+			cursor: pointer
 		+r(1000)
 			position: static
 			float: left
@@ -130,3 +132,52 @@
 		+med
 	.flats__item,.flat__item
 		display: none
+.appop
+	.popup
+		background: #fff 
+		padding: 40px 
+.flats__result
+	+med
+	font-size: 18px
+	color: #a59767
+	line-height: 1
+	text-transform: uppercase
+	margin-bottom: 28px
+.popupfeature
+	.feat__bigpic
+		float: left
+		width: 69%
+		+r(600)
+			float: none
+			width: auto
+		img
+			display: block
+			width: 100%
+	.feat__lesstext
+		float: right
+		width: 30%
+		+r(600)
+			float: none
+			width: auto
+	table
+		margin-bottom: 50px
+		margin-top: 50px 
+		td,th
+			font-weight: normal
+			font-size: 12px
+			color: #191821
+			line-height: 1.1
+			text-align: left
+		td
+			text-align: right
+		td:first-child
+			text-align: left
+		tfoot
+			td,th
+				padding-top: 12px
+				+med
+				color: #b8aa88
+	.flats__pdf
+		font-size: 14px
+		+med
+		color: #d30b16

@@ -95,6 +95,18 @@ head.ready(function() {
 		$('.'+idd).show();
 		return false;
 	});
+
+	$('.flats__image img').click(function(event) {
+		$('.appop').fadeIn();
+		par = $(this).parent().html();
+		parpar = $(this).parents('.flat__item');
+		put = parpar.find('.flats__metr').html();
+		titlee = parpar.find('.flats__result').html();
+		$('.feat__bigpic').html(par);
+		$('.flattext').html(put);
+		$('.flattitle').html(titlee);
+		return false;
+	});
 	// $('.flats__section a').click(function(event) {
 	// 	$('.flats__rooms').removeClass('is-active');
 	// 	$('.flats__rooms'+$('.flats__section a.is-active').data('s')).addClass('is-active');

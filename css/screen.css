@@ -212,6 +212,7 @@ body { font-family: Arial, sans-serif; font-size: 12px; line-height: 1.4; font-f
 .flats .flats__metr table tfoot td, .flats .flats__metr table tfoot th { padding-top: 12px; font-family: "med", sans-serif; color: #b8aa88; }
 .flats .flats__metr .flats__pdf { font-size: 14px; font-family: "med", sans-serif; color: #d30b16; }
 .flats .flats__image { position: absolute; left: 250px; text-align: center; font-family: "med", sans-serif; color: #b5b5b5; }
+.flats .flats__image img { cursor: pointer; }
 @media only screen and (max-width: 1000px) { .flats .flats__image { position: static; float: left; width: 40%; } }
 @media only screen and (max-width: 750px) { .flats .flats__image { float: none; width: auto; } }
 .flats .flats__image a { color: #b5b5b5; }
@@ -221,6 +222,22 @@ body { font-family: Arial, sans-serif; font-size: 12px; line-height: 1.4; font-f
 .flats .flats__br { display: block; color: #333333; margin-top: 20px; font-family: "med", sans-serif; }
 .flats .flats__item, .flats .flat__item { display: none; }
 
+.appop .popup { background: white; padding: 40px; }
+
+.flats__result { font-family: "med", sans-serif; font-size: 18px; color: #a59767; line-height: 1; text-transform: uppercase; margin-bottom: 28px; }
+
+.popupfeature .feat__bigpic { float: left; width: 69%; }
+@media only screen and (max-width: 600px) { .popupfeature .feat__bigpic { float: none; width: auto; } }
+.popupfeature .feat__bigpic img { display: block; width: 100%; }
+.popupfeature .feat__lesstext { float: right; width: 30%; }
+@media only screen and (max-width: 600px) { .popupfeature .feat__lesstext { float: none; width: auto; } }
+.popupfeature table { margin-bottom: 50px; margin-top: 50px; }
+.popupfeature table td, .popupfeature table th { font-weight: normal; font-size: 12px; color: #191821; line-height: 1.1; text-align: left; }
+.popupfeature table td { text-align: right; }
+.popupfeature table td:first-child { text-align: left; }
+.popupfeature table tfoot td, .popupfeature table tfoot th { padding-top: 12px; font-family: "med", sans-serif; color: #b8aa88; }
+.popupfeature .flats__pdf { font-size: 14px; font-family: "med", sans-serif; color: #d30b16; }
+
 .overlay { position: fixed; top: 0; left: 0; bottom: 0; right: 0; z-index: 1000; background: rgba(0, 0, 0, 0.8); display: none; text-align: center; font-size: 0; overflow: auto; }
 .overlay:before { content: ""; display: inline-block; vertical-align: middle; width: 0; height: 100%; }
 .overlay .popup { display: inline-block; vertical-align: middle; position: relative; z-index: 100; }
@@ -228,9 +245,9 @@ body { font-family: Arial, sans-serif; font-size: 12px; line-height: 1.4; font-f
 .overlay .overlay-click { position: absolute; left: 0; top: 0; bottom: 0; right: 0; z-index: 80; }
 
 .feat { background: white; max-width: 1000px; }
+.feat .feat__close { position: absolute; right: 32px; top: 30px; background: url('../img/icons-sf1e39e6a69.png') 0 -953px no-repeat; width: 50px; height: 50px; cursor: pointer; }
 .feat .feat__text { margin-left: 380px; font-family: "light", sans-serif; font-size: 14px; color: #191821; line-height: 1.3; padding: 41px 100px 60px 0; text-align: left; }
 @media only screen and (max-width: 750px) { .feat .feat__text { margin-left: 0; padding-left: 40px; } }
-.feat .feat__text .feat__close { position: absolute; right: 32px; top: 30px; background: url('../img/icons-sf1e39e6a69.png') 0 -953px no-repeat; width: 50px; height: 50px; cursor: pointer; }
 .feat .feat__text h3 { font-size: 24px; font-family: "thin", sans-serif; text-transform: uppercase; margin-bottom: 23px; }
 .feat .feat__text p { margin-bottom: 15px; }
 .feat .feat__text ul { list-style-type: disc; margin-left: 15px; margin-bottom: 20px; }
