@@ -60,6 +60,8 @@ head.ready(function() {
 		$('.flat__item').hide();
 		$(''+id).show();
 	}
+
+	$('.app11').show();
 	// flats selection
 	$('.flats__section a,.flats__rooms a').click(function(event) {
 		// active choice
