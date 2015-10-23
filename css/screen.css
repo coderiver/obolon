@@ -218,6 +218,7 @@ body { font-family: Arial, sans-serif; font-size: 12px; line-height: 1.4; font-f
 .flats .flats__image a.is-active { color: #a59767; }
 .flats .flats__image img { width: 500px; }
 @media only screen and (max-width: 1000px) { .flats .flats__image img { display: block; width: 100%; } }
+.flats .flats__br { display: block; color: #333333; margin-top: 20px; font-family: "med", sans-serif; }
 .flats .flats__item, .flats .flat__item { display: none; }
 
 .overlay { position: fixed; top: 0; left: 0; bottom: 0; right: 0; z-index: 1000; background: rgba(0, 0, 0, 0.8); display: none; text-align: center; font-size: 0; overflow: auto; }
