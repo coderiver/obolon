@@ -148,8 +148,8 @@
 			});
 			var customMapTypeId = 'custom_style';
 			var map = new google.maps.Map(document.getElementById('map'), {
-				zoom: 16,
-				center: myLatLng,
+				zoom: 14,
+				center: {lat: 50.510672, lng:30.499382999999966},
 				// disableDefaultUI: true,
 				zoomControl: true,
 				scrollwheel: false,
@@ -162,8 +162,76 @@
 			var marker = new google.maps.Marker({
 				position: myLatLng,
 				map: map,
-				icon: iconBase + 'dream.png'
+				icon: iconBase + 'bag.png'
 			});
+			var marker1 = new google.maps.Marker({
+				position: {lat: 50.5095895, lng: 30.49841434},
+				map: map,
+				icon: iconBase + 'wave.png'
+			});
+			var marker2 = new google.maps.Marker({
+				position: {lat: 50.5128722, lng: 30.5035600000003},
+				map: map,
+				icon: iconBase + 'tea.png'
+			});
+			var marker3 = new google.maps.Marker({
+				position: {lat: 50.5128722, lng:30.5020600000003 },
+				map: map,
+				icon: iconBase + 'shop.png'
+			});
+
+			var marker4 = new google.maps.Marker({
+				position: {lat: 50.510953, lng:30.505274999999983 },
+				map: map,
+				icon: iconBase + 'money.png'
+			});
+			var marker5 = new google.maps.Marker({
+				position: {lat: 50.5115913, lng:30.761450500000024 },
+				map: map,
+				icon: iconBase + 'money.png'
+			});
+			var marker5 = new google.maps.Marker({
+				position: {lat: 50.510672, lng:30.499382999999966 },
+				map: map,
+				icon: iconBase + 'money.png'
+			});
+			var marker5 = new google.maps.Marker({
+				position: {lat: 50.5165975, lng:30.503142499999967 },
+				map: map,
+				icon: iconBase + 'book.png'
+			});
+			var marker5 = new google.maps.Marker({
+				position: {lat: 50.4528166, lng:30.50150450000001 },
+				map: map,
+				icon: iconBase + 'book.png'
+			});
+			var marker5 = new google.maps.Marker({
+				position: {lat: 50.5165156, lng:30.509591399999977 },
+				map: map,
+				icon: iconBase + 'sport.png'
+			});
+			var marker5 = new google.maps.Marker({
+				position: {lat: 50.5146332, lng:30.500164100000006 },
+				map: map,
+				icon: iconBase + 'teddy.png'
+			});
+			var marker5 = new google.maps.Marker({
+				position: {lat: 50.511092, lng:30.496199700000034 },
+				map: map,
+				icon: iconBase + 'krest.png'
+			});
+			var marker5 = new google.maps.Marker({
+				position: {lat: 50.5034236, lng:30.50063799999998 },
+				map: map,
+				icon: iconBase + 'book.png'
+			});
+			var marker15 = new google.maps.Marker({
+				position: {lat: 50.5146469, lng:30.498570500000016 },
+				map: map,
+				icon: iconBase + 'obolon.png'
+			});
+			
+
 			map.mapTypes.set(customMapTypeId, customMapType);
 			map.setMapTypeId(customMapTypeId);
 		}
