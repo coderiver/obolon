@@ -160,72 +160,152 @@
 			});
 			var iconBase = 'img/m/';
 			var marker = new google.maps.Marker({
-				position: myLatLng,
+				position: {lat:50.5175895,lng: 30.498414300000036},
 				map: map,
 				icon: iconBase + 'bag.png'
 			});
+				var infowindow = new google.maps.InfoWindow({
+				    content: 'ТРЦ Dream Town 1'
+				});
+				marker.addListener('click', function() {
+				    infowindow.open(map, marker);
+				});
 			var marker1 = new google.maps.Marker({
 				position: {lat: 50.5095895, lng: 30.49841434},
 				map: map,
 				icon: iconBase + 'wave.png'
 			});
+				var infowindow1 = new google.maps.InfoWindow({
+				    content: 'Аквапарк в ТРЦ Dream Town 2 '
+				});
+				marker1.addListener('click', function() {
+				    infowindow1.open(map, marker1);
+				});
 			var marker2 = new google.maps.Marker({
 				position: {lat: 50.5128722, lng: 30.5035600000003},
 				map: map,
 				icon: iconBase + 'tea.png'
 			});
+				var infowindow2 = new google.maps.InfoWindow({
+				    content: 'Ресторан «Маракуйя» '
+				});
+				marker2.addListener('click', function() {
+				    infowindow2.open(map, marker2);
+				});
 			var marker3 = new google.maps.Marker({
 				position: {lat: 50.5128722, lng:30.5020600000003 },
 				map: map,
 				icon: iconBase + 'shop.png'
 			});
+				var infowindow3 = new google.maps.InfoWindow({
+				    content: 'Супермаркеты АТБ  '
+				});
+				marker3.addListener('click', function() {
+				    infowindow3.open(map, marker3);
+				});
 
 			var marker4 = new google.maps.Marker({
 				position: {lat: 50.510953, lng:30.505274999999983 },
 				map: map,
 				icon: iconBase + 'money.png'
 			});
+				var infowindow4 = new google.maps.InfoWindow({
+				    content: 'Банки: ОТП Банк '
+				});
+				marker4.addListener('click', function() {
+				    infowindow4.open(map, marker4);
+				});
 			var marker5 = new google.maps.Marker({
 				position: {lat: 50.5115913, lng:30.761450500000024 },
 				map: map,
 				icon: iconBase + 'money.png'
 			});
-			var marker5 = new google.maps.Marker({
+				var infowindow5 = new google.maps.InfoWindow({
+				    content: 'Райффайзен Банк Аваль  '
+				});
+				marker5.addListener('click', function() {
+				    infowindow5.open(map, marker5);
+				});
+			var marker6 = new google.maps.Marker({
 				position: {lat: 50.510672, lng:30.499382999999966 },
 				map: map,
 				icon: iconBase + 'money.png'
 			});
-			var marker5 = new google.maps.Marker({
+				var infowindow6 = new google.maps.InfoWindow({
+				    content: 'Альфа-Банк   '
+				});
+				marker6.addListener('click', function() {
+				    infowindow6.open(map, marker6);
+				});
+			var marker7 = new google.maps.Marker({
 				position: {lat: 50.5165975, lng:30.503142499999967 },
 				map: map,
 				icon: iconBase + 'book.png'
 			});
-			var marker5 = new google.maps.Marker({
+				var infowindow7 = new google.maps.InfoWindow({
+				    content: 'Спец.школа №20 с углубленным изучением французского языка '
+				});
+				marker7.addListener('click', function() {
+				    infowindow7.open(map, marker7);
+				});
+			var marker8 = new google.maps.Marker({
 				position: {lat: 50.4528166, lng:30.50150450000001 },
 				map: map,
 				icon: iconBase + 'book.png'
 			});
-			var marker5 = new google.maps.Marker({
+				var infowindow8 = new google.maps.InfoWindow({
+				    content: 'Университет им.Бориса Гриченко '
+				});
+				marker8.addListener('click', function() {
+				    infowindow8.open(map, marker8);
+				});
+
+			var marker9 = new google.maps.Marker({
 				position: {lat: 50.5165156, lng:30.509591399999977 },
 				map: map,
 				icon: iconBase + 'sport.png'
 			});
-			var marker5 = new google.maps.Marker({
+			
+				var infowindow9 = new google.maps.InfoWindow({
+				    content: 'Фитнес-центр «Аквариум» '
+				});
+				marker9.addListener('click', function() {
+				    infowindow9.open(map, marker9);
+				});
+			var marker10 = new google.maps.Marker({
 				position: {lat: 50.5146332, lng:30.500164100000006 },
 				map: map,
 				icon: iconBase + 'teddy.png'
 			});
-			var marker5 = new google.maps.Marker({
+				var infowindow10 = new google.maps.InfoWindow({
+				    content: 'Детский сад №636  '
+				});
+				marker10.addListener('click', function() {
+				    infowindow10.open(map, marker10);
+				});
+			var marker11 = new google.maps.Marker({
 				position: {lat: 50.511092, lng:30.496199700000034 },
 				map: map,
 				icon: iconBase + 'krest.png'
 			});
-			var marker5 = new google.maps.Marker({
+				var infowindow11 = new google.maps.InfoWindow({
+				    content: 'Центральная поликлиника Оболонского района  '
+				});
+				marker11.addListener('click', function() {
+				    infowindow11.open(map, marker11);
+				});
+			var marker12 = new google.maps.Marker({
 				position: {lat: 50.5034236, lng:30.50063799999998 },
 				map: map,
 				icon: iconBase + 'book.png'
 			});
-			var marker15 = new google.maps.Marker({
+				var infowindow12 = new google.maps.InfoWindow({
+				    content: 'СШ №194 «Перспектива» '
+				});
+				marker12.addListener('click', function() {
+				    infowindow12.open(map, marker12);
+				});
+			var marker13 = new google.maps.Marker({
 				position: {lat: 50.5146469, lng:30.498570500000016 },
 				map: map,
 				icon: iconBase + 'obolon.png'
