@@ -52,4 +52,62 @@ head.ready(function() {
 	$(window).on('resize', function() {
 		head();
 	});
+	function getcurrent(){
+		goto = 'app'+$('.flats__section a.is-active').data('s') + $('.flats__rooms.is-active a.is-active').data('s');
+		return goto;
+	}
+	function goto(id){
+		$('.flat__item').hide();
+		$(''+id).show();
+	}
+	// flats selection
+	$('.flats__section a,.flats__rooms a').click(function(event) {
+		// active choice
+		$(this).siblings().removeClass('is-active');
+		$(this).addClass('is-active');
+		// right rooms
+		$('.flats__rooms').removeClass('is-active');
+		$('.flats__rooms'+$('.flats__section a.is-active').data('s')).addClass('is-active');
+
+		// switching flat
+		idd = getcurrent();
+		// goto
+		$('.flat__item').hide();
+		$('.'+idd).show();
+		return false;
+	});
+
+	//switch floors pic
+	$('.flats__image a').click(function(event) {
+		ind = $(this).parent().children('a').index($(this));
+		$(this).siblings().removeClass('is-active');
+		$(this).addClass('is-active');
+		// $('.flats__image img').hide(); // this should be LOCAL
+		$(this).parent().find('img').hide();
+		$(this).parent().find('img').eq(ind).show();
+		return false;
+	});
+	$('.flats__type a').click(function(event) {
+		idd = $(this).data('goto');
+		$('.flat__item').hide();
+		$('.'+idd).show();
+		return false;
+	});
+	// $('.flats__section a').click(function(event) {
+	// 	$('.flats__rooms').removeClass('is-active');
+	// 	$('.flats__rooms'+$('.flats__section a.is-active').data('s')).addClass('is-active');
+	// });
+
+
+
+
+
+
+
+
+
+
+
+
+
 });

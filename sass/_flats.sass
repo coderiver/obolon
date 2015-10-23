@@ -12,6 +12,7 @@
 			padding-bottom: 40px 
 	.flats__left
 		float: left
+
 	.flats__section,.flats__rooms
 		display: inline-block
 		margin-right: 40px
@@ -42,6 +43,10 @@
 				color: #fff
 	.flats__rooms
 		display: inline-block
+	.flats__rooms
+		display: none
+		&.is-active
+			display: inline-block
 	.flats__result
 		+med
 		font-size: 18px
@@ -84,6 +89,8 @@
 				text-align: left
 			td
 				text-align: right
+			td:first-child
+				text-align: left
 			tfoot
 				td,th
 					padding-top: 12px
@@ -96,6 +103,9 @@
 	.flats__image
 		position: absolute
 		left: 250px 
+		text-align: center
+		+med
+		color: #b5b5b5 
 		+r(1000)
 			position: static
 			float: left
@@ -103,7 +113,15 @@
 		+r(750)
 			float: none
 			width: auto
+		a
+			color: #b5b5b5 
+			&.is-active
+				color: #a59767 
 		img
+			width: 500px 
+			
 			+r(1000)
 				display: block
-				width: 100% 
+				width: 100%
+	.flats__item,.flat__item
+		display: none
