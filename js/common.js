@@ -1,4 +1,10 @@
 head.ready(function() {
+	$('.dropicon').click(function(event) {
+		$('body').toggleClass('is-mobmenu');
+	});
+	$('.mobmenu a').click(function(event) {
+		$('body').toggleClass('is-mobmenu');
+	});
 	$('.js-popup').click(function(event) {
 		$('#'+$(this).data('popup')).fadeIn();
 		return false;
