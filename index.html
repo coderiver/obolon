@@ -16,59 +16,65 @@
 <!-- BEGIN  out-->
 <div class="out"  data-section="true" id="home">
 
-<div class="navf"><div class="navf__in">
-	<ul class="nav">
-		<li><a href="#home">Главная</a></li>
-		<li><a href="#features">Преимущества</a></li>
-		<li><a href="#location">Расположение</a></li>
-		<li><a href="#appartment">Апартаменты</a></li>
-		<li><a href="#gallery">ГАЛЕРЕЯ</a></li>
-		<li><a href="#developer">Девелопер</a></li>
-		<li><a href="#contacts">Контакты</a></li>
-	</ul>
-</div></div>
-<!-- begin header  -->
-<div class="header">
-	<!-- begin header__top  -->
-	<div class="header__top"><div class="header__in">
-		<a href='#home' class="header__logo"></a>
-		<div class="header__tel">+38 (044) 498-26-26</div>
-		<a href="#" class="header__book js-popup" data-popup="book">Записаться на просмотр</a>
-		<div class="header__lang">
-			<a href="#">рус</a>
-			<a href="#">укр</a>
-			<a href="#">eng</a>
-		</div>
-	</div></div>
-	<!-- end header__top -->
-	<!-- begin header bottom -->
-	<div class="header__bottom"><div class="header__in">
-		<ul class="nav nav_left">
+<!-- begin topwrap  -->
+<div class="topwrap">
+
+	<div class="navf"><div class="navf__in">
+		<ul class="nav">
+			<li><a href="#home">Главная</a></li>
 			<li><a href="#features">Преимущества</a></li>
 			<li><a href="#location">Расположение</a></li>
-			<li><a href="#gallery">ГАЛЕРЕЯ</a></li>
-		</ul>
-		<ul class="nav nav_right">
 			<li><a href="#appartment">Апартаменты</a></li>
+			<li><a href="#gallery">ГАЛЕРЕЯ</a></li>
 			<li><a href="#developer">Девелопер</a></li>
 			<li><a href="#contacts">Контакты</a></li>
 		</ul>
 	</div></div>
-	<!-- end header bottom -->
+	<!-- begin header  -->
+	<div class="header">
+		<!-- begin header__top  -->
+		<div class="header__top"><div class="header__in">
+			<a href='#home' class="header__logo"></a>
+			<div class="header__tel">+38 (044) 498-26-26</div>
+			<a href="#" class="header__book js-popup" data-popup="book">Записаться на просмотр</a>
+			<div class="header__lang">
+				<a href="#">рус</a>
+				<a href="#">укр</a>
+				<a href="#">eng</a>
+			</div>
+		</div></div>
+		<!-- end header__top -->
+		<!-- begin header bottom -->
+		<div class="header__bottom"><div class="header__in">
+			<ul class="nav nav_left">
+				<li><a href="#features">Преимущества</a></li>
+				<li><a href="#location">Расположение</a></li>
+				<li><a href="#gallery">ГАЛЕРЕЯ</a></li>
+			</ul>
+			<ul class="nav nav_right">
+				<li><a href="#appartment">Апартаменты</a></li>
+				<li><a href="#developer">Девелопер</a></li>
+				<li><a href="#contacts">Контакты</a></li>
+			</ul>
+		</div></div>
+		<!-- end header bottom -->
+	</div>
+	<!-- end header -->
+	<!-- begin subheader  -->
+	<div class="subheader cycle-slideshow"
+	    data-cycle-timeout="3000"
+	    data-cycle-speed='2000'
+	    data-cycle-slides="> div">
+		<div class="slide" style="background-image: url(img/s/1.jpg)"></div>
+		<div class="slide" style="background-image: url(img/s/2.jpg)"></div>
+		<div class="slide" style="background-image: url(img/s/3.jpg)"></div>
+		<div class="slide" style="background-image: url(img/s/4.jpg)"></div>
+		
+	</div>
+	<!-- end subheader -->
+
 </div>
-<!-- end header -->
-<!-- begin subheader  -->
-<div class="subheader cycle-slideshow"
-    data-cycle-timeout="3000"
-    data-cycle-speed='2000'
-    data-cycle-slides="> div">
-	<div class="slide" style="background-image: url(img/s/1.jpg)"></div>
-	<div class="slide" style="background-image: url(img/s/2.jpg)"></div>
-	<div class="slide" style="background-image: url(img/s/3.jpg)"></div>
-	<div class="slide" style="background-image: url(img/s/4.jpg)"></div>
-	
-</div>
-<!-- end subheader -->
+<!-- end topwrap -->
 
 <!-- begin about  -->
 <div class="about">
@@ -2679,10 +2685,10 @@
 		<div class="ask ask_popup">
 			<div class="ask__in">
 				<div class="ask__close"></div>
-				<h2>ЗАДАТЬ ВОПРОС</h2>
+				<h2>Записаться на просмотр</h2>
 				<input type="text" name="" placeholder="Введите Имя" id="">
 				<input type="text" name="" placeholder="Введите e-mail/телефон" id="">
-				<textarea placeholder="Введите коментарий" id=""></textarea>
+				<textarea placeholder="Укажите желаемую дату и время" id=""></textarea>
 				<input type="submit" value="ОТПРАВИТЬ">
 			</div>
 		</div>

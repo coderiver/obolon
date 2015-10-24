@@ -38,6 +38,8 @@ body { font-family: Arial, sans-serif; font-size: 12px; line-height: 1.4; font-f
 .l .l-col1 { float: left; width: 20%; }
 .l .l-col2 { float: right; width: 70%; }
 
+.topwrap { min-height: 100vh; }
+
 .navf { position: fixed; top: 0; left: 0; right: 0; background: white; z-index: 100; transform: translate(0, -45px); transition: transform 0.3s linear; box-shadow: 0 0 5px rgba(0, 0, 0, 0.5); }
 .is-menu .navf { transform: translate(0, 0); }
 @media only screen and (max-width: 630px) { .navf { display: none; } }
@@ -82,7 +84,7 @@ body { font-family: Arial, sans-serif; font-size: 12px; line-height: 1.4; font-f
 @media only screen and (max-width: 450px) { .header .header__tel { position: static; text-align: center; } }
 
 .subheader { position: relative; z-index: 50; }
-.subheader .slide { position: absolute; bottom: 0; top: 0; right: 0; left: 0; background-position: 0 50%; background-repeat: no-repeat; background-size: cover; }
+.subheader .slide { width: 100%; height: 100%; background-position: 0 50%; background-repeat: no-repeat; background-size: cover; }
 
 .footer { background: #181720; padding: 66px 0 100px 0; }
 .footer .footer__in { max-width: 1000px; margin: 0 auto; *zoom: 1; }
