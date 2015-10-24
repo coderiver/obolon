@@ -176,7 +176,7 @@ body { font-family: Arial, sans-serif; font-size: 12px; line-height: 1.4; font-f
 
 .cameras { *zoom: 1; }
 .cameras:after { content: " "; display: table; clear: both; }
-.cameras .camera { float: left; width: 50%; padding-bottom: 20%; position: relative; background-size: cover; background-position: 50% 50%; overflow: hidden; color: white; font-size: 14px; font-family: "med", sans-serif; }
+.cameras .camera { float: left; width: 50%; padding-bottom: 20%; position: relative; background-size: cover; background-position: 50% 50%; background-repeat: no-repeat; overflow: hidden; color: white; font-size: 14px; font-family: "med", sans-serif; }
 @media only screen and (max-width: 600px) { .cameras .camera { width: 100%; padding-bottom: 40%; } }
 .cameras .camera .camera__in { position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%); text-align: center; display: inline-block; }
 .cameras .camera h3 { text-transform: uppercase; font-size: 24px; font-family: "thin", sans-serif; }
