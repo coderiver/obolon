@@ -2540,10 +2540,14 @@
 			<div class="ask">
 				<div class="ask__in">
 					<h2>ЗАДАТЬ ВОПРОС</h2>
-					<input type="text" name="" placeholder="Введите Имя" id="">
-					<input type="text" name="" placeholder="Введите e-mail/телефон" id="">
-					<textarea placeholder="Введите коментарий" id=""></textarea>
+					<form action="/send.php" class="form">
+					<div class="thankyou">Спасибо!</div>
+					<input type="hidden" name="title" value="ЗАДАТЬ ВОПРОС" >
+					<input type="text" name="name" placeholder="Введите Имя" id="">
+					<input type="text" name="contact" placeholder="Введите e-mail/телефон" id="">
+					<textarea name="date" placeholder="Введите коментарий" id=""></textarea>
 					<input type="submit" value="ОТПРАВИТЬ">
+					</form>
 				</div>
 			</div>
 			<!-- end ask -->
