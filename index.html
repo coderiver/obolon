@@ -2566,10 +2566,14 @@
 			<div class="ask__in">
 				<div class="ask__close"></div>
 				<h2>Записаться на просмотр</h2>
-				<input type="text" name="" placeholder="Введите Имя" id="">
-				<input type="text" name="" placeholder="Введите e-mail/телефон" id="">
-				<textarea placeholder="Укажите желаемую дату и время" id=""></textarea>
+				<form class="form" action="send.php">
+				<div class="thankyou">Спасибо!</div>
+				<input type="hidden" name="title" value="Записаться на просмотр">
+				<input type="text" name="name" placeholder="Введите Имя" id="">
+				<input type="text" name="contact" placeholder="Введите e-mail/телефон" id="">
+				<textarea name="date" placeholder="Укажите желаемую дату и время" id=""></textarea>
 				<input type="submit" value="ОТПРАВИТЬ">
+				</form>
 			</div>
 		</div>
 		<!-- end ask -->
@@ -2584,10 +2588,15 @@
 		<div class="ask ask_popup">
 			<div class="ask__in">
 				<div class="ask__close"></div>
+				
 				<h2>Получить брошюру</h2>
-				<input type="text" name="" placeholder="Введите Имя" id="">
-				<input type="text" name="" placeholder="Введите e-mail/телефон" id="">
+				<form action="send.php" class="form">
+				<div class="thankyou">Спасибо!</div>
+				<input type="hidden" name="title" value="Получить брошюру">
+				<input type="text" name="name" placeholder="Введите Имя" id="">
+				<input type="text" name="contact" placeholder="Введите e-mail/телефон" id="">
 				<input type="submit" value="ОТПРАВИТЬ">
+				</form>
 			</div>
 		</div>
 		<!-- end ask -->

@@ -11,6 +11,7 @@ head.ready(function() {
 	});
 	$('.overlay-click,.feat__close,.ask__close,.camerapopup__close').click(function(event) {
 		$(this).parents('.overlay').hide();
+		$('.form').removeClass("is-success");
 	});
 	$('.slideshow__close').click(function(event) {
 		$('.slideshow').fadeOut();
@@ -113,10 +114,40 @@ head.ready(function() {
 		$('.flattitle').html(titlee);
 		return false;
 	});
-	// $('.flats__section a').click(function(event) {
-	// 	$('.flats__rooms').removeClass('is-active');
-	// 	$('.flats__rooms'+$('.flats__section a.is-active').data('s')).addClass('is-active');
-	// });
+	
+
+
+	$('.form').submit(function(event) {
+		event.preventDefault();
+		// validate
+		that = $(this);
+		nameVal = $(this).find('[name="name"]').val();
+		// emailVal = $('#email').val();
+		// contactVal = $('#contact').val();
+
+		if(nameVal!=''){
+
+
+			$.ajax({
+				type: "POST",
+				url: "http://profdigital.com.ua/Obolon/send.php",
+				data: that.serialize(), // serializes the form's elements.
+				success: function(data) {
+					that.addClass('is-success');
+					console.log(data);
+					// alert('done!');
+					setTimeout(function(){that.removeClass("is-success");}, 5000);
+				}
+			});
+		}
+		else{
+			that.addClass('shake');
+			setTimeout(function(){
+				that.removeClass('shake');
+			}, 1000);
+			return false;
+		}
+	});
 
 
 
