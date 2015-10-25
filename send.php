@@ -29,7 +29,7 @@
 
     // mail("akella.a@gmail.com", "Testing", $message, $headers);
     // echo "Check your email now....<BR/>";
-			mail('akella.a@gmail.com', $subj, $message, $headers);
+			mail('akella.a@gmail.com,shevchuk@prof.estate', $subj, $message, $headers);
 		}
 
 		?>
