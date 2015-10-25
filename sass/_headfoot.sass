@@ -49,9 +49,10 @@
 			
 			+r(968)
 				height: 200px
-			+r(450)
+			+r(700)
 				border: none
 				height: auto
+				+clr
 		.header__logo
 			position: absolute
 			left: 50%
@@ -64,9 +65,13 @@
 			+r(968)
 				left: 0
 				margin-left: 0
-			+r(450)
-				margin: 0 auto
+			+r(700)
+				margin: 10px 0 10px 10px
 				position: static
+				+s(logosmall)
+				background-color: #a59864 
+				float: left
+				box-shadow: 0 0 0 10px #a59864
 	.header__in
 		max-width: 1040px
 		margin: 0 auto
@@ -120,9 +125,12 @@
 		padding: 0 16px
 		color: #fff
 		right: 38px
-		+r(450)
-			display: block
+		+r(700)
+			right: 70px 
+		+r(500)
 			position: static
+			display: block
+			clear: both
 			text-align: center
 		&:hover
 			text-decoration: none
@@ -132,9 +140,11 @@
 		bottom: 15px
 		font-size: 14px
 		+light
-		+r(450)
+		+r(700)
 			bottom: auto
-			top: 15px
+			top: 7px
+			right: auto
+			left: 190px 
 		a
 			text-decoration: none
 			color: #a6a6a6
@@ -148,9 +158,12 @@
 		font-size: 18px
 		color: #383431
 		bottom: 45px
-		+r(450)
+		+r(700)
+			right: 70px 
+		+r(500)
 			position: static
-			text-align: center
+			clear: both
+			padding-left: 8px 
 
 
 .subheader
@@ -203,7 +216,7 @@
 			color: #fff
 	.footer__contactscol
 		float: left
-		padding-bottom: 30px
+		padding-bottom: 17px
 		width: 50%
 		font-size: 14px
 		line-height: 1.4
@@ -213,7 +226,7 @@
 			float: none
 			width: auto
 		p
-			margin-bottom: 18px
+			margin-bottom: 10px
 			a
 				color: #a59767
 				text-decoration: none

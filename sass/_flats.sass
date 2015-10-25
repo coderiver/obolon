@@ -4,6 +4,7 @@
 		margin: 0 auto
 		padding: 128px 0 103px 0
 		position: relative
+		
 		+clr
 		+r(1080)
 			margin: 0 40px
@@ -12,14 +13,15 @@
 			padding-bottom: 40px 
 	.flats__left
 		float: left
+		position: relative
 
 	.flats__section,.flats__rooms
 		display: inline-block
 		margin-right: 40px
-		margin-bottom: 35px
+		margin-bottom: 45px
 		h3
 			display: block
-			margin-bottom: 10px
+			margin-bottom: 13px
 			font-size: 14px
 			color: #191821
 			+light
@@ -29,12 +31,14 @@
 			font-size: 14px
 			height: 38px
 			line-height: 38px
-			border-radius: 3px
+			border-radius: 2px
 			width: 50px
 			text-decoration: none
 			text-align: center
 			color: #b5b5b5
 			+med
+			+r(600)
+				margin-bottom: 5px 
 			&.is-long
 				padding: 0 40px
 				width: auto
@@ -53,11 +57,11 @@
 		color: #a59767
 		line-height: 1
 		text-transform: uppercase
-		margin-bottom: 28px
+		margin-bottom: 32px
 	.flats__type
 		font-size: 14px
 		+med
-		margin-bottom: 130px
+		margin-bottom: 90px
 		color: #a59767
 		+r(750)
 			margin-bottom: 30px 
@@ -73,6 +77,9 @@
 		+light
 		line-height: 1.2
 		width: 160px
+		position: absolute
+		top: 220px 
+		left: 0 
 	.flats__metr
 		float: right
 		width: 230px
@@ -89,6 +96,8 @@
 				text-align: left
 			td
 				text-align: right
+			th
+				+med
 			td:first-child
 				text-align: left
 			tfoot
@@ -127,11 +136,13 @@
 				width: 100%
 	.flats__br
 		display: block
-		color: #333 
+		color: #191821
 		margin-top: 20px 
+		font-size: 14px 
 		+med
 	.flats__item,.flat__item
 		display: none
+		min-height: 320px 
 .appop
 	.popup
 		background: #fff 

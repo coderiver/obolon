@@ -56,10 +56,11 @@ body { font-family: Arial, sans-serif; font-size: 12px; line-height: 1.4; font-f
 @media only screen and (max-width: 450px) { .header .header__top { border: none; } }
 .header .header__top .header__in { height: 97px; }
 @media only screen and (max-width: 968px) { .header .header__top .header__in { height: 200px; } }
-@media only screen and (max-width: 450px) { .header .header__top .header__in { border: none; height: auto; } }
+@media only screen and (max-width: 700px) { .header .header__top .header__in { border: none; height: auto; *zoom: 1; }
+  .header .header__top .header__in:after { content: " "; display: table; clear: both; } }
 .header .header__top .header__logo { position: absolute; left: 50%; top: 0; margin-left: -100px; display: block; text-decoration: none; background: url('../img/icons-s0f1461b579.png') 0 -412px no-repeat; width: 202px; height: 201px; cursor: pointer; }
 @media only screen and (max-width: 968px) { .header .header__top .header__logo { left: 0; margin-left: 0; } }
-@media only screen and (max-width: 450px) { .header .header__top .header__logo { margin: 0 auto; position: static; } }
+@media only screen and (max-width: 700px) { .header .header__top .header__logo { margin: 10px 0 10px 10px; position: static; background: url('../img/icons-s0f1461b579.png') 0 -353px no-repeat; width: 155px; height: 49px; background-color: #a59864; float: left; box-shadow: 0 0 0 10px #a59864; } }
 .header .header__in { max-width: 1040px; margin: 0 auto; position: relative; }
 .header .header__bottom { position: relative; height: 52px; *zoom: 1; }
 .header .header__bottom:after { content: " "; display: table; clear: both; }
@@ -75,14 +76,16 @@ body { font-family: Arial, sans-serif; font-size: 12px; line-height: 1.4; font-f
 @media only screen and (max-width: 450px) { .header .nav a { text-align: center; display: block; } }
 .header .nav a:hover, .header .nav a.is-active { color: #191821; }
 .header .header__book { position: absolute; bottom: -1px; background: #8e1519; font-size: 14px; font-family: "light", sans-serif; height: 40px; line-height: 40px; padding: 0 16px; color: white; right: 38px; }
-@media only screen and (max-width: 450px) { .header .header__book { display: block; position: static; text-align: center; } }
+@media only screen and (max-width: 700px) { .header .header__book { right: 70px; } }
+@media only screen and (max-width: 500px) { .header .header__book { position: static; display: block; clear: both; text-align: center; } }
 .header .header__book:hover { text-decoration: none; }
 .header .header__lang { position: absolute; right: 5px; bottom: 15px; font-size: 14px; font-family: "light", sans-serif; }
-@media only screen and (max-width: 450px) { .header .header__lang { bottom: auto; top: 15px; } }
+@media only screen and (max-width: 700px) { .header .header__lang { bottom: auto; top: 7px; right: auto; left: 190px; } }
 .header .header__lang a { text-decoration: none; color: #a6a6a6; display: block; }
 .header .header__lang a:hover { color: black; }
 .header .header__tel { position: absolute; right: 54px; font-family: "med", sans-serif; font-size: 18px; color: #383431; bottom: 45px; }
-@media only screen and (max-width: 450px) { .header .header__tel { position: static; text-align: center; } }
+@media only screen and (max-width: 700px) { .header .header__tel { right: 70px; } }
+@media only screen and (max-width: 500px) { .header .header__tel { position: static; clear: both; padding-left: 8px; } }
 
 .subheader { position: relative; z-index: 50; }
 .subheader .slide { width: 100%; height: 100%; background-position: 0 50%; background-repeat: no-repeat; background-size: cover; }
@@ -97,9 +100,9 @@ body { font-family: Arial, sans-serif; font-size: 12px; line-height: 1.4; font-f
 .footer .footer__content { width: 66%; float: right; }
 @media only screen and (max-width: 930px) { .footer .footer__content { float: none; width: auto; } }
 .footer .footer__content h2 { font-size: 24px; line-height: 1; margin-bottom: 14px; font-family: "thin", sans-serif; text-transform: uppercase; color: white; }
-.footer .footer__contactscol { float: left; padding-bottom: 30px; width: 50%; font-size: 14px; line-height: 1.4; color: white; font-family: "light", sans-serif; }
+.footer .footer__contactscol { float: left; padding-bottom: 17px; width: 50%; font-size: 14px; line-height: 1.4; color: white; font-family: "light", sans-serif; }
 @media only screen and (max-width: 500px) { .footer .footer__contactscol { float: none; width: auto; } }
-.footer .footer__contactscol p { margin-bottom: 18px; }
+.footer .footer__contactscol p { margin-bottom: 10px; }
 .footer .footer__contactscol p a { color: #a59767; text-decoration: none; }
 .footer .footer__contactscol em { font-size: 18px; font-style: normal; }
 .footer .footer__contactscol strong { font-weight: normal; font-family: "med", sans-serif; color: #a59767; display: block; }
@@ -198,27 +201,29 @@ body { font-family: Arial, sans-serif; font-size: 12px; line-height: 1.4; font-f
 .flats .flats__in:after { content: " "; display: table; clear: both; }
 @media only screen and (max-width: 1080px) { .flats .flats__in { margin: 0 40px; } }
 @media only screen and (max-width: 750px) { .flats .flats__in { padding-top: 40px; padding-bottom: 40px; } }
-.flats .flats__left { float: left; }
-.flats .flats__section, .flats .flats__rooms { display: inline-block; margin-right: 40px; margin-bottom: 35px; }
-.flats .flats__section h3, .flats .flats__rooms h3 { display: block; margin-bottom: 10px; font-size: 14px; color: #191821; font-family: "light", sans-serif; }
-.flats .flats__section a, .flats .flats__rooms a { display: inline-block; border: 1px solid #b5b5b5; font-size: 14px; height: 38px; line-height: 38px; border-radius: 3px; width: 50px; text-decoration: none; text-align: center; color: #b5b5b5; font-family: "med", sans-serif; }
+.flats .flats__left { float: left; position: relative; }
+.flats .flats__section, .flats .flats__rooms { display: inline-block; margin-right: 40px; margin-bottom: 45px; }
+.flats .flats__section h3, .flats .flats__rooms h3 { display: block; margin-bottom: 13px; font-size: 14px; color: #191821; font-family: "light", sans-serif; }
+.flats .flats__section a, .flats .flats__rooms a { display: inline-block; border: 1px solid #b5b5b5; font-size: 14px; height: 38px; line-height: 38px; border-radius: 2px; width: 50px; text-decoration: none; text-align: center; color: #b5b5b5; font-family: "med", sans-serif; }
+@media only screen and (max-width: 600px) { .flats .flats__section a, .flats .flats__rooms a { margin-bottom: 5px; } }
 .flats .flats__section a.is-long, .flats .flats__rooms a.is-long { padding: 0 40px; width: auto; }
 .flats .flats__section a.is-active, .flats .flats__section a:hover, .flats .flats__rooms a.is-active, .flats .flats__rooms a:hover { background: #b5b5b5; color: white; }
 .flats .flats__rooms { display: inline-block; }
 .flats .flats__rooms { display: none; }
 .flats .flats__rooms.is-active { display: inline-block; }
-.flats .flats__result { font-family: "med", sans-serif; font-size: 18px; color: #a59767; line-height: 1; text-transform: uppercase; margin-bottom: 28px; }
-.flats .flats__type { font-size: 14px; font-family: "med", sans-serif; margin-bottom: 130px; color: #a59767; }
+.flats .flats__result { font-family: "med", sans-serif; font-size: 18px; color: #a59767; line-height: 1; text-transform: uppercase; margin-bottom: 32px; }
+.flats .flats__type { font-size: 14px; font-family: "med", sans-serif; margin-bottom: 90px; color: #a59767; }
 @media only screen and (max-width: 750px) { .flats .flats__type { margin-bottom: 30px; } }
 .flats .flats__type a { color: #b5b5b5; }
 .flats .flats__type a.is-active { color: #a59767; }
 .flats .clr { clear: both; }
-.flats .flats__text { font-size: 12px; color: #191821; font-family: "light", sans-serif; line-height: 1.2; width: 160px; }
+.flats .flats__text { font-size: 12px; color: #191821; font-family: "light", sans-serif; line-height: 1.2; width: 160px; position: absolute; top: 220px; left: 0; }
 .flats .flats__metr { float: right; width: 230px; }
 @media only screen and (max-width: 750px) { .flats .flats__metr { float: none; margin-top: 20px; } }
 .flats .flats__metr table { margin-bottom: 50px; }
 .flats .flats__metr table td, .flats .flats__metr table th { font-weight: normal; font-size: 12px; color: #191821; line-height: 1.1; text-align: left; }
 .flats .flats__metr table td { text-align: right; }
+.flats .flats__metr table th { font-family: "med", sans-serif; }
 .flats .flats__metr table td:first-child { text-align: left; }
 .flats .flats__metr table tfoot td, .flats .flats__metr table tfoot th { padding-top: 12px; font-family: "med", sans-serif; color: #b8aa88; }
 .flats .flats__metr .flats__pdf { font-size: 14px; font-family: "med", sans-serif; color: #d30b16; }
@@ -230,8 +235,8 @@ body { font-family: Arial, sans-serif; font-size: 12px; line-height: 1.4; font-f
 .flats .flats__image a.is-active { color: #a59767; }
 .flats .flats__image img { width: 500px; }
 @media only screen and (max-width: 1000px) { .flats .flats__image img { display: block; width: 100%; } }
-.flats .flats__br { display: block; color: #333333; margin-top: 20px; font-family: "med", sans-serif; }
-.flats .flats__item, .flats .flat__item { display: none; }
+.flats .flats__br { display: block; color: #191821; margin-top: 20px; font-size: 14px; font-family: "med", sans-serif; }
+.flats .flats__item, .flats .flat__item { display: none; min-height: 320px; }
 
 .appop .popup { background: white; padding: 40px; }
 
