@@ -108,9 +108,11 @@ head.ready(function() {
 		par = $(this).parent().html();
 		parpar = $(this).parents('.flat__item');
 		put = parpar.find('.flats__metr').html();
+		ty = parpar.find('.flats__type .is-active').text();
 		titlee = parpar.find('.flats__result').html();
 		$('.feat__bigpic').html(par);
 		$('.flattext').html(put);
+		$('.flattype').html(ty)
 		$('.flattitle').html(titlee);
 		return false;
 	});

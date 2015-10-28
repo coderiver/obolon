@@ -28,13 +28,15 @@
 		a
 			display: inline-block
 			text-transform: uppercase
-			color: #a59767
+			
+			color: #191821
 			text-decoration: none
-			font-size: 12px
+			font-size: 14px
 			height: 40px
 			line-height: 40px 
 			&:hover,&.is-active
-				color: #191821
+				color: #a59767
+				+med
 .header
 	position: relative
 	z-index: 100 
@@ -60,18 +62,25 @@
 			margin-left: -100px
 			display: block
 			text-decoration: none
-			+s(logo)
+			// +s(logo)
 			cursor: pointer
+			background: url(../img/logo_g_200x200px.svg) no-repeat 0 0 
+			width: 200px 
+			height: 200px 
+			box-shadow: 0 0 0 1px #fff
 			+r(968)
 				left: 0
 				margin-left: 0
 			+r(700)
-				margin: 10px 0 10px 10px
+				margin: 0px 0 0px 0px
 				position: static
 				+s(logosmall)
+				width: 185px 
+				height: 69px 
+				background: url(../img/logo_w_200x200px.svg) no-repeat -10px -69px 
 				background-color: #a59864 
+				
 				float: left
-				box-shadow: 0 0 0 10px #a59864
 	.header__in
 		max-width: 1040px
 		margin: 0 auto
@@ -83,7 +92,7 @@
 		+r(782)
 			height: auto
 	.nav
-		font-size: 12px
+		font-size: 14px
 		text-transform: uppercase
 		text-decoration: none
 		list-style: none
@@ -103,7 +112,7 @@
 			+r(780)
 				display: block
 		a
-			color: #a59767
+			color: #191821
 			text-decoration: none
 			height: 52px
 			line-height: 52px
@@ -113,7 +122,8 @@
 				text-align: center
 				display: block
 			&:hover,&.is-active
-				color: #191821
+				color: #a59767
+				
 	.header__book
 		position: absolute
 		bottom: -1px
@@ -164,6 +174,7 @@
 			position: static
 			clear: both
 			padding-left: 8px 
+			text-align: center
 
 
 .subheader

@@ -1,3 +1,4 @@
+
 <!doctype html>
 <html>
 <head>
@@ -25,7 +26,7 @@
 			<li><a href="#features">Преимущества</a></li>
 			<li><a href="#location">Расположение</a></li>
 			<li><a href="#appartment">Апартаменты</a></li>
-			<li><a href="#gallery">ГАЛЕРЕЯ</a></li>
+			<li><a href="#gallery">Галерея</a></li>
 			<li><a href="#developer">Девелопер</a></li>
 			<li><a href="#contacts">Контакты</a></li>
 		</ul>
@@ -37,7 +38,7 @@
 			<li><a href="#features">Преимущества</a></li>
 			<li><a href="#location">Расположение</a></li>
 			<li><a href="#appartment">Апартаменты</a></li>
-			<li><a href="#gallery">ГАЛЕРЕЯ</a></li>
+			<li><a href="#gallery">Галерея</a></li>
 			<li><a href="#developer">Девелопер</a></li>
 			<li><a href="#contacts">Контакты</a></li>
 		</ul>
@@ -61,7 +62,7 @@
 			<ul class="nav nav_left">
 				<li><a href="#features">Преимущества</a></li>
 				<li><a href="#location">Расположение</a></li>
-				<li><a href="#gallery">ГАЛЕРЕЯ</a></li>
+				<li><a href="#gallery">Галерея</a></li>
 			</ul>
 			<ul class="nav nav_right">
 				<li><a href="#appartment">Апартаменты</a></li>
@@ -97,9 +98,8 @@
 		<div class="about__text">
 			<p>Obolon Residences – жилой комплекс премиум класса, созданный по западным стандартам британским девелопером Dragon-Ukrainian Properties & Development. Комплекс находится в самом сердце Оболони, в нескольких шагах от станции метро «Минская».
 			<br>Западный дизайн, роскошные интерьеры лобби и этажей, отделка мрамором,  скоростные лифты – это лишь несколько отличительных черт комплекса. Квартиры с панорамными окнами и эффективными планировками и элитные пентхаусы удивят
-			даже самых искушенных. Беспрецедентный комплекс услуг и эксклюзивная инфраструктура лучших резиденций мировых мегаполисов – для жителей Obolon Residences: лаунж-зона на крыше с джакузи, спортзал, детская комната, конференц-зал, прачечная и пятизвездочный сервис.</p>
-
-			<p>ЖК Obolon Residences – победитель престижной европейской премии European Property Awards 2014-2015 в категории «Высотные жилые здания».</p>
+			даже самых искушенных. Беспрецедентный комплекс услуг и эксклюзивная инфраструктура лучших резиденций мировых мегаполисов – для жителей Obolon Residences: лаунж-зона на крыше с джакузи, спортзал, детская комната, конференц-зал, прачечная и пятизвездочный сервис. 
+			<br>ЖК Obolon Residences – победитель престижной европейской премии European Property Awards 2014-2015 в категории «Высотные жилые здания».</p>
 
 
 		</div>
@@ -127,6 +127,7 @@
 
 <!-- begin features  -->
 <div class="features" data-section="true" id="features">
+<h2 class="title"><span>Преимущества</span></h2>
 	<div class="features__in">
 		<ul>
 			<li class="feature"><a href="#" class="js-popup" data-popup="feat1"><div class="feature__pic" style="background-image: url(img/f/1s.jpg)"><div class="feature__more">Подробнее</div></div> <span class="feature__title">Консьерж-сервис</span></a></li>
@@ -149,7 +150,8 @@
 
 <!-- begin map  -->
 <div class="map" data-section="true" id="location">
-<div id="map" style="height: 350px;"></div>
+<h2 class="title"><span>Расположение</span></h2>
+<div id="map" style="height: 450px;"></div>
 	<script>
 		var map;
 		function initMap() {
@@ -180,10 +182,10 @@
 			var marker = new google.maps.Marker({
 				position: {lat:50.5175895,lng: 30.498414300000036},
 				map: map,
-				icon: iconBase + 'bag.png'
+				icon: iconBase + 'wave.png'
 			});
 				var infowindow = new google.maps.InfoWindow({
-				    content: 'ТРЦ Dream Town 1'
+				    content: 'Аквапарк в ТРЦ Dream Town 2'
 				});
 				marker.addListener('click', function() {
 				    infowindow.open(map, marker);
@@ -191,16 +193,16 @@
 			var marker1 = new google.maps.Marker({
 				position: {lat: 50.5095895, lng: 30.49841434},
 				map: map,
-				icon: iconBase + 'wave.png'
+				icon: iconBase + 'bag.png'
 			});
 				var infowindow1 = new google.maps.InfoWindow({
-				    content: 'Аквапарк в ТРЦ Dream Town 2 '
+				    content: 'ТРЦ Dream Town 1'
 				});
 				marker1.addListener('click', function() {
 				    infowindow1.open(map, marker1);
 				});
 			var marker2 = new google.maps.Marker({
-				position: {lat: 50.5128722, lng: 30.5035600000003},
+				position: {lat: 50.5127814, lng: 30.50315},
 				map: map,
 				icon: iconBase + 'tea.png'
 			});
@@ -211,30 +213,30 @@
 				    infowindow2.open(map, marker2);
 				});
 			var marker3 = new google.maps.Marker({
-				position: {lat: 50.5128722, lng:30.5020600000003 },
+				position: {lat: 50.5126991, lng:30.5018433 },
 				map: map,
 				icon: iconBase + 'shop.png'
 			});
 				var infowindow3 = new google.maps.InfoWindow({
-				    content: 'Супермаркеты АТБ  '
+				    content: 'Супермаркет АТБ  '
 				});
 				marker3.addListener('click', function() {
 				    infowindow3.open(map, marker3);
 				});
 
 			var marker4 = new google.maps.Marker({
-				position: {lat: 50.510953, lng:30.505274999999983 },
+				position: {lat: 50.5115107, lng:30.5046268 },
 				map: map,
 				icon: iconBase + 'money.png'
 			});
 				var infowindow4 = new google.maps.InfoWindow({
-				    content: 'Банки: ОТП Банк '
+				    content: 'ОТП Банк '
 				});
 				marker4.addListener('click', function() {
 				    infowindow4.open(map, marker4);
 				});
 			var marker5 = new google.maps.Marker({
-				position: {lat: 50.5115913, lng:30.761450500000024 },
+				position: {lat: 50.5113136, lng:30.5076256 },
 				map: map,
 				icon: iconBase + 'money.png'
 			});
@@ -245,7 +247,7 @@
 				    infowindow5.open(map, marker5);
 				});
 			var marker6 = new google.maps.Marker({
-				position: {lat: 50.510672, lng:30.499382999999966 },
+				position: {lat: 50.5105383, lng:30.4992985 },
 				map: map,
 				icon: iconBase + 'money.png'
 			});
@@ -256,7 +258,7 @@
 				    infowindow6.open(map, marker6);
 				});
 			var marker7 = new google.maps.Marker({
-				position: {lat: 50.5165975, lng:30.503142499999967 },
+				position: {lat: 50.5165874, lng:30.5030189 },
 				map: map,
 				icon: iconBase + 'book.png'
 			});
@@ -279,7 +281,7 @@
 				});
 
 			var marker9 = new google.maps.Marker({
-				position: {lat: 50.5165156, lng:30.509591399999977 },
+				position: {lat: 50.5165003, lng:30.5094658 },
 				map: map,
 				icon: iconBase + 'sport.png'
 			});
@@ -291,7 +293,7 @@
 				    infowindow9.open(map, marker9);
 				});
 			var marker10 = new google.maps.Marker({
-				position: {lat: 50.5146332, lng:30.500164100000006 },
+				position: {lat: 50.5143975, lng:30.5015243 },
 				map: map,
 				icon: iconBase + 'teddy.png'
 			});
@@ -302,7 +304,7 @@
 				    infowindow10.open(map, marker10);
 				});
 			var marker11 = new google.maps.Marker({
-				position: {lat: 50.511092, lng:30.496199700000034 },
+				position: {lat: 50.5109438, lng:30.4961668 },
 				map: map,
 				icon: iconBase + 'krest.png'
 			});
@@ -324,11 +326,27 @@
 				    infowindow12.open(map, marker12);
 				});
 			var marker13 = new google.maps.Marker({
-				position: {lat: 50.5146469, lng:30.498570500000016 },
+				position: {lat: 50.5132573, lng:30.4998771 },
 				map: map,
 				icon: iconBase + 'obolon.png'
 			});
-			
+			var infowindow13 = new google.maps.InfoWindow({
+				    content: 'ЖК Obolon Residences'
+				});
+				marker13.addListener('click', function() {
+				    infowindow13.open(map, marker13);
+				});
+			var marker14 = new google.maps.Marker({
+				position: {lat: 50.5117435, lng:30.4906403 },
+				map: map,
+				icon: iconBase + 'book.png'
+			});
+				var infowindow14 = new google.maps.InfoWindow({
+				    content: 'Университет им.Бориса Гриченко '
+				});
+				marker14.addListener('click', function() {
+				    infowindow14.open(map, marker14);
+				});
 
 			// map.mapTypes.set(customMapTypeId, customMapType);
 			// map.setMapTypeId(customMapTypeId);
@@ -340,6 +358,7 @@
 
 <!-- begin flats  -->
 <div class="flats" data-section="true" id="appartment">
+<h2 class="title"><span>Аппартаменты</span></h2>
 	<div class="flats__in">
 		<div class="flats__section">
 			<h3>1. Выберите секцию</h3>
@@ -347,14 +366,14 @@
 			<a href="#" data-s="2" class="flats__sectionsingle is-long ">Секция 2</a>
 		</div>
 		<div class="flats__rooms flats__rooms1 is-active">
-			<h3>2. Выберите количество комнат в апартаменте </h3>
+			<h3>2. Выберите кол-во комнат</h3>
 			<a href="#" data-s='1' class="flats__room is-active">1</a>
 			<a href="#" data-s='2' class="flats__room ">2</a>
 			<a href="#" data-s='3' class="flats__room">3</a>
 			<a href="#" data-s='5' class="flats__room is-long">пентхаус</a>
 		</div>
 		<div class="flats__rooms flats__rooms2">
-			<h3>2. Выберите количество комнат в апартаменте </h3>
+			<h3>2. Выберите кол-во комнат</h3>
 			<a href="#" data-s='1' class="flats__room is-active">1</a>
 			<a href="#" data-s='2' class="flats__room">2</a>
 			<a href="#" data-s='3' class="flats__room">3</a>
@@ -372,7 +391,7 @@
 					<div class="flats__roomresult">1-КОМНАТНАЯ</div>
 				</div>
 				<div class="flats__type">
-					<a href="#" data-goto="app11" class="is-active">Тип1</a><br>
+					<a href="#" data-goto="app11" class="is-active">Тип 1</a><br>
 					<a href="#" data-goto="app11t2">Тип 2</a><br>
 					<a href="#" data-goto="app11t3">Тип П1</a><br>
 					<a href="#" data-goto="app11t4">Тип П2</a>
@@ -407,7 +426,7 @@
 				                                </tr>
 				                                </tfoot>
 				                            </table>
-				<a href="img/app/s1/1/СЕКЦИЯ1,1-КОМНАТНАЯ,ТИП 1.pdf" class="flats__pdf">Подробнее (скачать PDF)</a><a class="flats__br js-popup" data-popup="book1" href="">Получить брошюру</a>
+				<a href="img/app/s1/1/СЕКЦИЯ1,1-КОМНАТНАЯ,ТИП 1.pdf" target="_blank" class="flats__pdf" >Подробнее (скачать PDF)</a><a class="flats__br js-popup" data-popup="book1" href="">Получить брошюру</a>
 			</div>
 		</div>
 		<!-- end flats metr -->
@@ -425,7 +444,7 @@
 					<div class="flats__roomresult">1-КОМНАТНАЯ</div>
 				</div>
 				<div class="flats__type">
-					<a href="#" data-goto="app11" >Тип1</a><br>
+					<a href="#" data-goto="app11" >Тип 1</a><br>
 					<a href="#" data-goto="app11t2" class="is-active">Тип 2</a><br>
 					<a href="#" data-goto="app11t3">Тип П1</a><br>
 					<a href="#" data-goto="app11t4">Тип П2</a>
@@ -460,7 +479,7 @@
 				                                </tr>
 				                                </tfoot>
 				                            </table>
-				<a href="img/app/s1/1/СЕКЦИЯ1,1-КОМНАТНАЯ,ТИП 2.pdf" class="flats__pdf">Подробнее (скачать PDF)</a><a class="flats__br js-popup" data-popup="book1" href="">Получить брошюру</a>
+				<a href="img/app/s1/1/СЕКЦИЯ1,1-КОМНАТНАЯ,ТИП 2.pdf" target="_blank" class="flats__pdf" >Подробнее (скачать PDF)</a><a class="flats__br js-popup" data-popup="book1" href="">Получить брошюру</a>
 			</div>
 		</div>
 		<!-- end flats metr -->
@@ -478,7 +497,7 @@
 					<div class="flats__roomresult">1-КОМНАТНАЯ</div>
 				</div>
 				<div class="flats__type">
-					<a href="#" data-goto="app11" >Тип1</a><br>
+					<a href="#" data-goto="app11" >Тип 1</a><br>
 					<a href="#" data-goto="app11t2" >Тип 2</a><br>
 					<a href="#" data-goto="app11t3" class="is-active">Тип П1</a><br>
 					<a href="#" data-goto="app11t4">Тип П2</a>
@@ -516,7 +535,7 @@
 				                                </tr>
 				                                </tfoot>
 				                            </table>
-				<a href="img/app/s1/1/СЕКЦИЯ1,1-КОМНАТНАЯ,ТИП П1.pdf" class="flats__pdf">Подробнее (скачать PDF)</a><a class="flats__br js-popup" data-popup="book1" href="">Получить брошюру</a>
+				<a href="img/app/s1/1/СЕКЦИЯ1,1-КОМНАТНАЯ,ТИП П1.pdf" target="_blank" class="flats__pdf" >Подробнее (скачать PDF)</a><a class="flats__br js-popup" data-popup="book1" href="">Получить брошюру</a>
 			</div>
 		</div>
 		<!-- end flats metr -->
@@ -534,7 +553,7 @@
 					<div class="flats__roomresult">1-КОМНАТНАЯ</div>
 				</div>
 				<div class="flats__type">
-					<a href="#" data-goto="app11" >Тип1</a><br>
+					<a href="#" data-goto="app11" >Тип 1</a><br>
 					<a href="#" data-goto="app11t2" >Тип 2</a><br>
 					<a href="#" data-goto="app11t3" >Тип П1</a><br>
 					<a href="#" data-goto="app11t4" class="is-active">Тип П2</a>
@@ -572,7 +591,7 @@
                                 </tr>
                                 </tfoot>
                             </table>
-				<a href="img/app/s1/1/СЕКЦИЯ1,1-КОМНАТНАЯ,ТИП П2.pdf" class="flats__pdf">Подробнее (скачать PDF)</a><a class="flats__br js-popup" data-popup="book1" href="">Получить брошюру</a>
+				<a href="img/app/s1/1/СЕКЦИЯ1,1-КОМНАТНАЯ,ТИП П2.pdf" target="_blank" class="flats__pdf" >Подробнее (скачать PDF)</a><a class="flats__br js-popup" data-popup="book1" href="">Получить брошюру</a>
 			</div>
 		</div>
 		<!-- end flats metr -->
@@ -590,7 +609,7 @@
 					<div class="flats__roomresult">2-КОМНАТНАЯ</div>
 				</div>
 				<div class="flats__type">
-					<a href="#" data-goto="app12" class="is-active">Тип1</a><br>
+					<a href="#" data-goto="app12" class="is-active">Тип 1</a><br>
 					<a href="#" data-goto="app12t2" >Тип 2</a><br>
 					<a href="#" data-goto="app12t3" >Тип 3</a><br>
 					<a href="#" data-goto="app12t4" >Тип П1</a><br>
@@ -631,7 +650,7 @@
                                 </tr>
                                 </tfoot>
                             </table>
-				<a href="img/app/s1/2/СЕКЦИЯ1,2-КОМНАТНАЯ,ТИП 1.pdf" class="flats__pdf">Подробнее (скачать PDF)</a><a class="flats__br js-popup" data-popup="book1" href="">Получить брошюру</a>
+				<a href="img/app/s1/2/СЕКЦИЯ1,2-КОМНАТНАЯ,ТИП 1.pdf" target="_blank" class="flats__pdf" >Подробнее (скачать PDF)</a><a class="flats__br js-popup" data-popup="book1" href="">Получить брошюру</a>
 			</div>
 		</div>
 		<!-- end flats metr -->
@@ -649,7 +668,7 @@
 					<div class="flats__roomresult">2-КОМНАТНАЯ</div>
 				</div>
 				<div class="flats__type">
-					<a href="#" data-goto="app12" >Тип1</a><br>
+					<a href="#" data-goto="app12" >Тип 1</a><br>
 					<a href="#" data-goto="app12t2" class="is-active">Тип 2</a><br>
 					<a href="#" data-goto="app12t3" >Тип 3</a><br>
 					<a href="#" data-goto="app12t4" >Тип П1</a><br>
@@ -690,7 +709,7 @@
                                 </tr>
                                 </tfoot>
                             </table>
-				<a href="img/app/s1/2/СЕКЦИЯ1,2-КОМНАТНАЯ,ТИП 2.pdf" class="flats__pdf">Подробнее (скачать PDF)</a><a class="flats__br js-popup" data-popup="book1" href="">Получить брошюру</a>
+				<a href="img/app/s1/2/СЕКЦИЯ1,2-КОМНАТНАЯ,ТИП 2.pdf" target="_blank" class="flats__pdf" >Подробнее (скачать PDF)</a><a class="flats__br js-popup" data-popup="book1" href="">Получить брошюру</a>
 			</div>
 		</div>
 		<!-- end flats metr -->
@@ -708,7 +727,7 @@
 					<div class="flats__roomresult">2-КОМНАТНАЯ</div>
 				</div>
 				<div class="flats__type">
-					<a href="#" data-goto="app12" >Тип1</a><br>
+					<a href="#" data-goto="app12" >Тип 1</a><br>
 					<a href="#" data-goto="app12t2">Тип 2</a><br>
 					<a href="#" data-goto="app12t3"  class="is-active">Тип 3</a><br>
 					<a href="#" data-goto="app12t4" >Тип П1</a><br>
@@ -749,7 +768,7 @@
                                 </tr>
                                 </tfoot>
                             </table>
-				<a href="img/app/s1/2/СЕКЦИЯ1,2-КОМНАТНАЯ,ТИП 3.pdf" class="flats__pdf">Подробнее (скачать PDF)</a><a class="flats__br js-popup" data-popup="book1" href="">Получить брошюру</a>
+				<a href="img/app/s1/2/СЕКЦИЯ1,2-КОМНАТНАЯ,ТИП 3.pdf" target="_blank" class="flats__pdf" >Подробнее (скачать PDF)</a><a class="flats__br js-popup" data-popup="book1" href="">Получить брошюру</a>
 			</div>
 		</div>
 		<!-- end flats metr -->
@@ -768,7 +787,7 @@
 					<div class="flats__roomresult">2-КОМНАТНАЯ</div>
 				</div>
 				<div class="flats__type">
-					<a href="#" data-goto="app12" >Тип1</a><br>
+					<a href="#" data-goto="app12" >Тип 1</a><br>
 					<a href="#" data-goto="app12t2">Тип 2</a><br>
 					<a href="#" data-goto="app12t3" >Тип 3</a><br>
 					<a href="#" data-goto="app12t4"  class="is-active">Тип П1</a><br>
@@ -811,7 +830,7 @@
                                 </tr>
                                 </tfoot>
                             </table>
-				<a href="img/app/s1/2/СЕКЦИЯ1,2-КОМНАТНАЯ,ТИП П1.pdf" class="flats__pdf">Подробнее (скачать PDF)</a><a class="flats__br js-popup" data-popup="book1" href="">Получить брошюру</a>
+				<a href="img/app/s1/2/СЕКЦИЯ1,2-КОМНАТНАЯ,ТИП П1.pdf" target="_blank" class="flats__pdf" >Подробнее (скачать PDF)</a><a class="flats__br js-popup" data-popup="book1" href="">Получить брошюру</a>
 			</div>
 		</div>
 		<!-- end flats metr -->
@@ -830,7 +849,7 @@
 					<div class="flats__roomresult">2-КОМНАТНАЯ</div>
 				</div>
 				<div class="flats__type">
-					<a href="#" data-goto="app12" >Тип1</a><br>
+					<a href="#" data-goto="app12" >Тип 1</a><br>
 					<a href="#" data-goto="app12t2">Тип 2</a><br>
 					<a href="#" data-goto="app12t3" >Тип 3</a><br>
 					<a href="#" data-goto="app12t4"  >Тип П1</a><br>
@@ -874,7 +893,7 @@
                                 </tr>
                                 </tfoot>
                             </table>
-				<a href="img/app/s1/2/СЕКЦИЯ1,2-КОМНАТНАЯ,ТИП П2.pdf" class="flats__pdf">Подробнее (скачать PDF)</a><a class="flats__br js-popup" data-popup="book1" href="">Получить брошюру</a>
+				<a href="img/app/s1/2/СЕКЦИЯ1,2-КОМНАТНАЯ,ТИП П2.pdf" target="_blank" class="flats__pdf" >Подробнее (скачать PDF)</a><a class="flats__br js-popup" data-popup="book1" href="">Получить брошюру</a>
 			</div>
 		</div>
 		<!-- end flats metr -->
@@ -892,7 +911,7 @@
 					<div class="flats__roomresult">2-КОМНАТНАЯ</div>
 				</div>
 				<div class="flats__type">
-					<a href="#" data-goto="app12" >Тип1</a><br>
+					<a href="#" data-goto="app12" >Тип 1</a><br>
 					<a href="#" data-goto="app12t2">Тип 2</a><br>
 					<a href="#" data-goto="app12t3" >Тип 3</a><br>
 					<a href="#" data-goto="app12t4"  >Тип П1</a><br>
@@ -935,7 +954,7 @@
                         </tr>
                         </tfoot>
                     </table>
-				<a href="img/app/s1/2/СЕКЦИЯ1,2-КОМНАТНАЯ,ТИП П3.pdf" class="flats__pdf">Подробнее (скачать PDF)</a><a class="flats__br js-popup" data-popup="book1" href="">Получить брошюру</a>
+				<a href="img/app/s1/2/СЕКЦИЯ1,2-КОМНАТНАЯ,ТИП П3.pdf" target="_blank" class="flats__pdf" >Подробнее (скачать PDF)</a><a class="flats__br js-popup" data-popup="book1" href="">Получить брошюру</a>
 			</div>
 		</div>
 		<!-- end flats metr -->
@@ -953,7 +972,7 @@
 					<div class="flats__roomresult">2-КОМНАТНАЯ</div>
 				</div>
 				<div class="flats__type">
-					<a href="#" data-goto="app12" >Тип1</a><br>
+					<a href="#" data-goto="app12" >Тип 1</a><br>
 					<a href="#" data-goto="app12t2">Тип 2</a><br>
 					<a href="#" data-goto="app12t3" >Тип 3</a><br>
 					<a href="#" data-goto="app12t4"  >Тип П1</a><br>
@@ -996,7 +1015,7 @@
                                 </tr>
                                 </tfoot>
                             </table>
-				<a href="img/app/s1/2/СЕКЦИЯ1,2-КОМНАТНАЯ,ТИП П4.pdf" class="flats__pdf">Подробнее (скачать PDF)</a><a class="flats__br js-popup" data-popup="book1" href="">Получить брошюру</a>
+				<a href="img/app/s1/2/СЕКЦИЯ1,2-КОМНАТНАЯ,ТИП П4.pdf" target="_blank" class="flats__pdf" >Подробнее (скачать PDF)</a><a class="flats__br js-popup" data-popup="book1" href="">Получить брошюру</a>
 			</div>
 		</div>
 		<!-- end flats metr -->
@@ -1015,7 +1034,7 @@
 					<div class="flats__roomresult">3-КОМНАТНАЯ</div>
 				</div>
 				<div class="flats__type">
-					<a href="#" data-goto="app13" class="is-active">Тип1</a><br>
+					<a href="#" data-goto="app13" class="is-active">Тип 1</a><br>
 					<a href="#" data-goto="app13t2">Тип 2</a><br>
 					<a href="#" data-goto="app13t3"  >Тип П1</a>
 				</div>
@@ -1054,7 +1073,7 @@
                                 </tr>
                                 </tfoot>
                             </table>
-				<a href="img/app/s1/3/СЕКЦИЯ1,3-КОМНАТНАЯ,ТИП 1.pdf" class="flats__pdf">Подробнее (скачать PDF)</a><a class="flats__br js-popup" data-popup="book1" href="">Получить брошюру</a>
+				<a href="img/app/s1/3/СЕКЦИЯ1,3-КОМНАТНАЯ,ТИП 1.pdf" target="_blank" class="flats__pdf" >Подробнее (скачать PDF)</a><a class="flats__br js-popup" data-popup="book1" href="">Получить брошюру</a>
 			</div>
 		</div>
 		<!-- end flats metr -->
@@ -1073,7 +1092,7 @@
 					<div class="flats__roomresult">3-КОМНАТНАЯ</div>
 				</div>
 				<div class="flats__type">
-					<a href="#" data-goto="app13" >Тип1</a><br>
+					<a href="#" data-goto="app13" >Тип 1</a><br>
 					<a href="#" data-goto="app13t2" class="is-active">Тип 2</a><br>
 					<a href="#" data-goto="app13t3"  >Тип П1</a>
 				</div>
@@ -1112,7 +1131,7 @@
                                 </tr>
                                 </tfoot>
                             </table>
-				<a href="img/app/s1/3/СЕКЦИЯ1,3-КОМНАТНАЯ,ТИП 2.pdf" class="flats__pdf">Подробнее (скачать PDF)</a><a class="flats__br js-popup" data-popup="book1" href="">Получить брошюру</a>
+				<a href="img/app/s1/3/СЕКЦИЯ1,3-КОМНАТНАЯ,ТИП 2.pdf" target="_blank" class="flats__pdf" >Подробнее (скачать PDF)</a><a class="flats__br js-popup" data-popup="book1" href="">Получить брошюру</a>
 			</div>
 		</div>
 		<!-- end flats metr -->
@@ -1130,7 +1149,7 @@
 					<div class="flats__roomresult">3-КОМНАТНАЯ</div>
 				</div>
 				<div class="flats__type">
-					<a href="#" data-goto="app13" >Тип1</a><br>
+					<a href="#" data-goto="app13" >Тип 1</a><br>
 					<a href="#" data-goto="app13t2" >Тип 2</a><br>
 					<a href="#" data-goto="app13t3" class="is-active" >Тип П1</a>
 				</div>
@@ -1170,7 +1189,7 @@
                                 </tr>
                                 </tfoot>
                             </table>
-				<a href="img/app/s1/3/СЕКЦИЯ1,3-КОМНАТНАЯ,ТИП П1.pdf" class="flats__pdf">Подробнее (скачать PDF)</a><a class="flats__br js-popup" data-popup="book1" href="">Получить брошюру</a>
+				<a href="img/app/s1/3/СЕКЦИЯ1,3-КОМНАТНАЯ,ТИП П1.pdf" target="_blank" class="flats__pdf" >Подробнее (скачать PDF)</a><a class="flats__br js-popup" data-popup="book1" href="">Получить брошюру</a>
 			</div>
 		</div>
 		<!-- end flats metr -->
@@ -1193,7 +1212,7 @@
 					<div class="flats__roomresult">1-КОМНАТНАЯ</div>
 				</div>
 				<div class="flats__type">
-					<a href="#" data-goto="app21" class="is-active">Тип1</a><br>
+					<a href="#" data-goto="app21" class="is-active">Тип 1</a><br>
 					<a href="#" data-goto="app21t2" >Тип 2</a><br>
 					<a href="#" data-goto="app21t3"  >Тип 3</a><br>
 					<a href="#" data-goto="app21t3"  >Тип П1</a><br>
@@ -1231,7 +1250,7 @@
                                 </tr>
                                 </tfoot>
                             </table>
-				<a href="img/app/s2/1/СЕКЦИЯ2,1-КОМНАТНАЯ,ТИП 1.pdf" class="flats__pdf">Подробнее (скачать PDF)</a><a class="flats__br js-popup" data-popup="book1" href="">Получить брошюру</a>
+				<a href="img/app/s2/1/СЕКЦИЯ2,1-КОМНАТНАЯ,ТИП 1.pdf" target="_blank" class="flats__pdf" >Подробнее (скачать PDF)</a><a class="flats__br js-popup" data-popup="book1" href="">Получить брошюру</a>
 			</div>
 		</div>
 		<!-- end flats metr -->
@@ -1250,7 +1269,7 @@
 					<div class="flats__roomresult">1-КОМНАТНАЯ</div>
 				</div>
 				<div class="flats__type">
-					<a href="#" data-goto="app21" >Тип1</a><br>
+					<a href="#" data-goto="app21" >Тип 1</a><br>
 					<a href="#" data-goto="app21t2" class="is-active">Тип 2</a><br>
 					<a href="#" data-goto="app21t3"  >Тип 3</a><br>
 					<a href="#" data-goto="app21t4"  >Тип П1</a><br>
@@ -1287,7 +1306,7 @@
                                 </tr>
                                 </tfoot>
                             </table>
-				<a href="img/app/s2/1/СЕКЦИЯ2,1-КОМНАТНАЯ,ТИП 2.pdf" class="flats__pdf">Подробнее (скачать PDF)</a><a class="flats__br js-popup" data-popup="book1" href="">Получить брошюру</a>
+				<a href="img/app/s2/1/СЕКЦИЯ2,1-КОМНАТНАЯ,ТИП 2.pdf" target="_blank" class="flats__pdf" >Подробнее (скачать PDF)</a><a class="flats__br js-popup" data-popup="book1" href="">Получить брошюру</a>
 			</div>
 		</div>
 		<!-- end flats metr -->
@@ -1305,7 +1324,7 @@
 					<div class="flats__roomresult">1-КОМНАТНАЯ</div>
 				</div>
 				<div class="flats__type">
-					<a href="#" data-goto="app21" >Тип1</a><br>
+					<a href="#" data-goto="app21" >Тип 1</a><br>
 					<a href="#" data-goto="app21t2" >Тип 2</a><br>
 					<a href="#" data-goto="app21t3"  class="is-active">Тип 3</a><br>
 					<a href="#" data-goto="app21t4"  >Тип П1</a><br>
@@ -1341,7 +1360,7 @@
                                 </tr>
                                 </tfoot>
                             </table>
-				<a href="img/app/s2/1/СЕКЦИЯ2,1-КОМНАТНАЯ,ТИП 3.pdf" class="flats__pdf">Подробнее (скачать PDF)</a><a class="flats__br js-popup" data-popup="book1" href="">Получить брошюру</a>
+				<a href="img/app/s2/1/СЕКЦИЯ2,1-КОМНАТНАЯ,ТИП 3.pdf" target="_blank" class="flats__pdf" >Подробнее (скачать PDF)</a><a class="flats__br js-popup" data-popup="book1" href="">Получить брошюру</a>
 			</div>
 		</div>
 		<!-- end flats metr -->
@@ -1359,7 +1378,7 @@
 					<div class="flats__roomresult">1-КОМНАТНАЯ</div>
 				</div>
 				<div class="flats__type">
-					<a href="#" data-goto="app21" >Тип1</a><br>
+					<a href="#" data-goto="app21" >Тип 1</a><br>
 					<a href="#" data-goto="app21t2" >Тип 2</a><br>
 					<a href="#" data-goto="app21t3" >Тип 3</a><br>
 					<a href="#" data-goto="app21t4"   class="is-active">Тип П1</a><br>
@@ -1396,7 +1415,7 @@
                                 </tr>
                                 </tfoot>
                             </table>
-				<a href="img/app/s2/1/СЕКЦИЯ2,1-КОМНАТНАЯ,ТИП П1.pdf" class="flats__pdf">Подробнее (скачать PDF)</a><a class="flats__br js-popup" data-popup="book1" href="">Получить брошюру</a>
+				<a href="img/app/s2/1/СЕКЦИЯ2,1-КОМНАТНАЯ,ТИП П1.pdf" target="_blank" class="flats__pdf" >Подробнее (скачать PDF)</a><a class="flats__br js-popup" data-popup="book1" href="">Получить брошюру</a>
 			</div>
 		</div>
 		<!-- end flats metr -->
@@ -1414,7 +1433,7 @@
 					<div class="flats__roomresult">1-КОМНАТНАЯ</div>
 				</div>
 				<div class="flats__type">
-					<a href="#" data-goto="app21" >Тип1</a><br>
+					<a href="#" data-goto="app21" >Тип 1</a><br>
 					<a href="#" data-goto="app21t2" >Тип 2</a><br>
 					<a href="#" data-goto="app21t3" >Тип 3</a><br>
 					<a href="#" data-goto="app21t4"   >Тип П1</a><br>
@@ -1450,7 +1469,7 @@
                                 </tr>
                                 </tfoot>
                             </table>
-				<a href="img/app/s2/1/СЕКЦИЯ2,1-КОМНАТНАЯ,ТИП П 2.pdf" class="flats__pdf">Подробнее (скачать PDF)</a><a class="flats__br js-popup" data-popup="book1" href="">Получить брошюру</a>
+				<a href="img/app/s2/1/СЕКЦИЯ2,1-КОМНАТНАЯ,ТИП П 2.pdf" target="_blank" class="flats__pdf" >Подробнее (скачать PDF)</a><a class="flats__br js-popup" data-popup="book1" href="">Получить брошюру</a>
 			</div>
 		</div>
 		<!-- end flats metr -->
@@ -1469,7 +1488,7 @@
 					<div class="flats__roomresult">2-КОМНАТНАЯ</div>
 				</div>
 				<div class="flats__type">
-					<a href="#" data-goto="app22" class="is-active">Тип1</a><br>
+					<a href="#" data-goto="app22" class="is-active">Тип 1</a><br>
 					<a href="#" data-goto="app22t2" >Тип 2</a><br>
 					<a href="#" data-goto="app22t3"   >Тип П1</a>
 				</div>
@@ -1507,7 +1526,7 @@
                                 </tr>
                                 </tfoot>
                             </table>
-				<a href="img/app/s2/2/СЕКЦИЯ2,2-КОМНАТНАЯ,ТИП 1.pdf" class="flats__pdf">Подробнее (скачать PDF)</a><a class="flats__br js-popup" data-popup="book1" href="">Получить брошюру</a>
+				<a href="img/app/s2/2/СЕКЦИЯ2,2-КОМНАТНАЯ,ТИП 1.pdf" target="_blank" class="flats__pdf" >Подробнее (скачать PDF)</a><a class="flats__br js-popup" data-popup="book1" href="">Получить брошюру</a>
 			</div>
 		</div>
 		<!-- end flats metr -->
@@ -1525,7 +1544,7 @@
 					<div class="flats__roomresult">2-КОМНАТНАЯ</div>
 				</div>
 				<div class="flats__type">
-					<a href="#" data-goto="app22" >Тип1</a><br>
+					<a href="#" data-goto="app22" >Тип 1</a><br>
 					<a href="#" data-goto="app22t2" class="is-active">Тип 2</a><br>
 					<a href="#" data-goto="app22t3"   >Тип П1</a>
 				</div>
@@ -1563,7 +1582,7 @@
                                 </tr>
                                 </tfoot>
                             </table>
-				<a href="img/app/s2/2/СЕКЦИЯ2,2-КОМНАТНАЯ,ТИП 2.pdf" class="flats__pdf">Подробнее (скачать PDF)</a><a class="flats__br js-popup" data-popup="book1" href="">Получить брошюру</a>
+				<a href="img/app/s2/2/СЕКЦИЯ2,2-КОМНАТНАЯ,ТИП 2.pdf" target="_blank" class="flats__pdf" >Подробнее (скачать PDF)</a><a class="flats__br js-popup" data-popup="book1" href="">Получить брошюру</a>
 			</div>
 		</div>
 		<!-- end flats metr -->
@@ -1582,7 +1601,7 @@
 					<div class="flats__roomresult">2-КОМНАТНАЯ</div>
 				</div>
 				<div class="flats__type">
-					<a href="#" data-goto="app22" >Тип1</a><br>
+					<a href="#" data-goto="app22" >Тип 1</a><br>
 					<a href="#" data-goto="app22t2" >Тип 2</a><br>
 					<a href="#" data-goto="app22t3"   class="is-active">Тип П1</a>
 				</div>
@@ -1620,7 +1639,7 @@
                                 </tr>
                                 </tfoot>
                             </table>
-				<a href="img/app/s2/2/СЕКЦИЯ2,2-КОМНАТНАЯ,ТИП П1.pdf" class="flats__pdf">Подробнее (скачать PDF)</a><a class="flats__br js-popup" data-popup="book1" href="">Получить брошюру</a>
+				<a href="img/app/s2/2/СЕКЦИЯ2,2-КОМНАТНАЯ,ТИП П1.pdf" target="_blank" class="flats__pdf" >Подробнее (скачать PDF)</a><a class="flats__br js-popup" data-popup="book1" href="">Получить брошюру</a>
 			</div>
 		</div>
 		<!-- end flats metr -->
@@ -1639,7 +1658,7 @@
 					<div class="flats__roomresult">3-КОМНАТНАЯ</div>
 				</div>
 				<div class="flats__type">
-					<a href="#" data-goto="app23" class="is-active">Тип1</a><br>
+					<a href="#" data-goto="app23" class="is-active">Тип 1</a><br>
 					<a href="#" data-goto="app23t2"   >Тип П1</a>
 				</div>
 				<div class="flats__text">
@@ -1678,7 +1697,7 @@
 				                                </tr>
 				                                </tfoot>
 				                            </table>
-				<a href="img/app/s2/3/СЕКЦИЯ2,3-КОМНАТНАЯ,ТИП 1.pdf" class="flats__pdf">Подробнее (скачать PDF)</a><a class="flats__br js-popup" data-popup="book1" href="">Получить брошюру</a>
+				<a href="img/app/s2/3/СЕКЦИЯ2,3-КОМНАТНАЯ,ТИП 1.pdf" target="_blank" class="flats__pdf" >Подробнее (скачать PDF)</a><a class="flats__br js-popup" data-popup="book1" href="">Получить брошюру</a>
 			</div>
 		</div>
 		<!-- end flats metr -->
@@ -1696,7 +1715,7 @@
 					<div class="flats__roomresult">3-КОМНАТНАЯ</div>
 				</div>
 				<div class="flats__type">
-					<a href="#" data-goto="app23" >Тип1</a><br>
+					<a href="#" data-goto="app23" >Тип 1</a><br>
 					<a href="#" data-goto="app23t2"   class="is-active">Тип П1</a>
 				</div>
 				<div class="flats__text">
@@ -1730,12 +1749,12 @@
 				                                <tr>
 				                                    <td>Общая площадь</td>
 				                                    <td>
-				                                        136,16                                        кв.м
+				                                        138,56                                        кв.м
 				                                    </td>
 				                                </tr>
 				                                </tfoot>
 				                            </table>
-				<a href="img/app/s2/3/СЕКЦИЯ2,3-КОМНАТНАЯ,ТИП П1.pdf" class="flats__pdf">Подробнее (скачать PDF)</a><a class="flats__br js-popup" data-popup="book1" href="">Получить брошюру</a>
+				<a href="img/app/s2/3/СЕКЦИЯ2,3-КОМНАТНАЯ,ТИП П1.pdf" target="_blank" class="flats__pdf" >Подробнее (скачать PDF)</a><a class="flats__br js-popup" data-popup="book1" href="">Получить брошюру</a>
 			</div>
 		</div>
 		<!-- end flats metr -->
@@ -1754,7 +1773,7 @@
 					<div class="flats__roomresult">4-КОМНАТНАЯ</div>
 				</div>
 				<div class="flats__type">
-					<a href="#" data-goto="app24" class="is-active">Тип1</a><br>
+					<a href="#" data-goto="app24" class="is-active">Тип 1</a><br>
 					<a href="#" data-goto="app24t2"   >Тип П1</a>
 				</div>
 				<div class="flats__text">
@@ -1796,7 +1815,7 @@
                                 </tr>
                                 </tfoot>
                             </table>
-				<a href="img/app/s2/4/СЕКЦИЯ2,4-КОМНАТНАЯ,ТИП 1.pdf" class="flats__pdf">Подробнее (скачать PDF)</a><a class="flats__br js-popup" data-popup="book1" href="">Получить брошюру</a>
+				<a href="img/app/s2/4/СЕКЦИЯ2,4-КОМНАТНАЯ,ТИП 1.pdf" target="_blank" class="flats__pdf" >Подробнее (скачать PDF)</a><a class="flats__br js-popup" data-popup="book1" href="">Получить брошюру</a>
 			</div>
 		</div>
 		<!-- end flats metr -->
@@ -1814,7 +1833,7 @@
 						<div class="flats__roomresult">4-КОМНАТНАЯ</div>
 					</div>
 					<div class="flats__type">
-						<a href="#" data-goto="app24" >Тип1</a><br>
+						<a href="#" data-goto="app24" >Тип 1</a><br>
 						<a href="#" data-goto="app24t2"   class="is-active">Тип П1</a>
 					</div>
 					<div class="flats__text">
@@ -1857,7 +1876,7 @@
                             </tr>
                             </tfoot>
                         </table>
-					<a href="img/app/s2/4/СЕКЦИЯ2,4-КОМНАТНАЯ,ТИП П1.pdf" class="flats__pdf">Подробнее (скачать PDF)</a><a class="flats__br js-popup" data-popup="book1" href="">Получить брошюру</a>
+					<a href="img/app/s2/4/СЕКЦИЯ2,4-КОМНАТНАЯ,ТИП П1.pdf" target="_blank" class="flats__pdf" >Подробнее (скачать PDF)</a><a class="flats__br js-popup" data-popup="book1" href="">Получить брошюру</a>
 				</div>
 			</div>
 			<!-- end flats metr -->
@@ -1875,7 +1894,7 @@
 					<div class="flats__roomresult">Пентхаус</div>
 				</div>
 				<div class="flats__type">
-					<a href="#" data-goto="app15" class="is-active">Тип1</a><br>
+					<a href="#" data-goto="app15" class="is-active">Тип 1</a><br>
 					<a href="#" data-goto="app15t2">Тип 2</a><br>
 					<a href="#" data-goto="app15t3">Тип 3</a><br>
 					<a href="#" data-goto="app15t4">Тип 4</a><br>
@@ -1887,12 +1906,11 @@
 				</div>
 			</div>
 			<div class="flats__image">
-				<img src="img/app/s1/5/1/СЕКЦИЯ1,ПЕНТХАУС,ТИП-1,КРОВЛЯ.jpg" alt="">
-				<img style="display:none" src="img/app/s1/5/1/СЕКЦИЯ1,ПЕНТХАУС,ТИП-1,ЭТАЖ1.jpg" alt="">
+				<img src="img/app/s1/5/1/СЕКЦИЯ1,ПЕНТХАУС,ТИП-1,ЭТАЖ1.jpg" alt="">
 				<img style="display:none" src="img/app/s1/5/1/СЕКЦИЯ1,ПЕНТХАУС,ТИП-1,ЭТАЖ2.jpg" alt="">
+				<img style="display:none" src="img/app/s1/5/1/СЕКЦИЯ1,ПЕНТХАУС,ТИП-1,КРОВЛЯ.jpg" alt="">
 				<br>
-				<a href="#" class="is-active">Кровля</a> | <a href="#">Этаж 1</a> |
-				<a href="#">Этаж 2</a>
+				<a href="#" class="is-active">Этаж 1</a> | <a href="#">Этаж 2</a> | <a href="#">Кровля</a>
 			</div>
 			<!-- begin metr -->
 			<div class="flats__metr">
@@ -1914,6 +1932,7 @@
 </tr><tr><td>9. Коридор</td><td>5,84 кв.м</td>
 </tr><tr><td>10. Терраса</td><td>5,91 кв.м</td>
 </tr><tr><td>11. Терраса</td><td>3,14 кв.м</td>
+</tr><tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
 </tr><tr>                                    </tr>
                                     <tr>
                                         <th colspan="2">2 этаж</th>
@@ -1937,7 +1956,7 @@
                                     </tr>
                                     </tfoot>
                                 </table>
-				<a href="img/app/s1/5/1/СЕКЦИЯ1,ПЕНТХАУС,ТИП 1.pdf" class="flats__pdf">Подробнее (скачать PDF)</a><a class="flats__br js-popup" data-popup="book1" href="">Получить брошюру</a>
+				<a href="img/app/s1/5/1/СЕКЦИЯ1,ПЕНТХАУС,ТИП 1.pdf" target="_blank" class="flats__pdf" >Подробнее (скачать PDF)</a><a class="flats__br js-popup" data-popup="book1" href="">Получить брошюру</a>
 			</div>
 		</div>
 		<!-- end flats metr -->
@@ -1956,7 +1975,7 @@
 					<div class="flats__roomresult">Пентхаус</div>
 				</div>
 				<div class="flats__type">
-					<a href="#" data-goto="app15" >Тип1</a><br>
+					<a href="#" data-goto="app15" >Тип 1</a><br>
 					<a href="#" data-goto="app15t2" class="is-active">Тип 2</a><br>
 					<a href="#" data-goto="app15t3">Тип 3</a><br>
 					<a href="#" data-goto="app15t4">Тип 4</a><br>
@@ -1990,6 +2009,7 @@
 </tr><tr><td>6. Холл</td><td>11,91 кв.м</td>
 </tr><tr><td>7. Лоджия</td><td>2,49 кв.м</td>
 </tr><tr><td>8. Терраса</td><td>12,90 кв.м</td>
+</tr><tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
 </tr><tr>                                    </tr>
                                     <tr>
                                         <th colspan="2">2 этаж</th>
@@ -2008,7 +2028,7 @@
                                     </tr>
                                     </tfoot>
                                 </table>
-				<a href="img/app/s1/5/2/СЕКЦИЯ1,ПЕНТХАУС,ТИП 2.pdf" class="flats__pdf">Подробнее (скачать PDF)</a><a class="flats__br js-popup" data-popup="book1" href="">Получить брошюру</a>
+				<a href="img/app/s1/5/2/СЕКЦИЯ1,ПЕНТХАУС,ТИП 2.pdf" target="_blank" class="flats__pdf" >Подробнее (скачать PDF)</a><a class="flats__br js-popup" data-popup="book1" href="">Получить брошюру</a>
 			</div>
 		</div>
 		<!-- end flats metr -->
@@ -2027,7 +2047,7 @@
 					<div class="flats__roomresult">Пентхаус</div>
 				</div>
 				<div class="flats__type">
-					<a href="#" data-goto="app15" >Тип1</a><br>
+					<a href="#" data-goto="app15" >Тип 1</a><br>
 					<a href="#" data-goto="app15t2">Тип 2</a><br>
 					<a href="#" data-goto="app15t3"  class="is-active">Тип 3</a><br>
 					<a href="#" data-goto="app15t4">Тип 4</a><br>
@@ -2038,13 +2058,11 @@
 				</div>
 			</div>
 			<div class="flats__image">
-				<img class="is-active" src="img/app/s1/5/3/СЕКЦИЯ1,ПЕНТХАУС,ТИП-3,КРОВЛЯ.jpg" alt="">
-				<img style="display:none" src="img/app/s1/5/3/СЕКЦИЯ1,ПЕНТХАУС,ТИП-3,ЭТАЖ1.jpg" alt="">
+				<img class="is-active" src="img/app/s1/5/3/СЕКЦИЯ1,ПЕНТХАУС,ТИП-3,ЭТАЖ1.jpg" alt="">
 				<img style="display:none" src="img/app/s1/5/3/СЕКЦИЯ1,ПЕНТХАУС,ТИП-3,ЭТАЖ2.jpg" alt="">
+				<img style="display:none" src="img/app/s1/5/3/СЕКЦИЯ1,ПЕНТХАУС,ТИП-3,КРОВЛЯ.jpg" alt="">
 				<br>
-				<a href="#" class="is-active">Кровля</a> |
-				<a href="#">Этаж 1</a> |
-				<a href="#">Этаж 2</a>
+                <a href="#" class="is-active">Этаж 1</a> | <a href="#">Этаж 2</a> | <a href="#">Кровля</a>
 			</div>
 			<!-- begin metr -->
 			<div class="flats__metr">
@@ -2061,6 +2079,7 @@
 </tr><tr><td>4. Холл</td><td>7,26 кв.м</td>
 </tr><tr><td>5. Лоджия</td><td>3,15 кв.м</td>
 </tr><tr><td>6. Кладовая</td><td>3,58 кв.м</td>
+</tr><tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
 </tr><tr>                                    </tr>
                                     <tr>
                                         <th colspan="2">2 этаж</th>
@@ -2083,7 +2102,7 @@
                                     </tr>
                                     </tfoot>
                                 </table>
-				<a href="img/app/s1/5/3/СЕКЦИЯ1,ПЕНТХАУС,ТИП 3.pdf" class="flats__pdf">Подробнее (скачать PDF)</a><a class="flats__br js-popup" data-popup="book1" href="">Получить брошюру</a>
+				<a href="img/app/s1/5/3/СЕКЦИЯ1,ПЕНТХАУС,ТИП 3.pdf" target="_blank" class="flats__pdf" >Подробнее (скачать PDF)</a><a class="flats__br js-popup" data-popup="book1" href="">Получить брошюру</a>
 			</div>
 		</div>
 		<!-- end flats metr -->
@@ -2101,7 +2120,7 @@
 					<div class="flats__roomresult">Пентхаус</div>
 				</div>
 				<div class="flats__type">
-					<a href="#" data-goto="app15" >Тип1</a><br>
+					<a href="#" data-goto="app15" >Тип 1</a><br>
 					<a href="#" data-goto="app15t2">Тип 2</a><br>
 					<a href="#" data-goto="app15t3"  >Тип 3</a><br>
 					<a href="#" data-goto="app15t4" class="is-active">Тип 4</a><br>
@@ -2112,13 +2131,11 @@
 				</div>
 			</div>
 			<div class="flats__image">
-				<img class="is-active" src="img/app/s1/5/4/СЕКЦИЯ1,ПЕНТХАУС,ТИП-4,КРОВЛЯ.jpg" alt="">
-				<img style="display:none" src="img/app/s1/5/4/СЕКЦИЯ1,ПЕНТХАУС,ТИП-4,ЭТАЖ1.jpg" alt="">
+				<img class="is-active" src="img/app/s1/5/4/СЕКЦИЯ1,ПЕНТХАУС,ТИП-4,ЭТАЖ1.jpg" alt="">
 				<img style="display:none" src="img/app/s1/5/4/СЕКЦИЯ1,ПЕНТХАУС,ТИП-4,ЭТАЖ2.jpg" alt="">
+				<img style="display:none" src="img/app/s1/5/4/СЕКЦИЯ1,ПЕНТХАУС,ТИП-4,КРОВЛЯ.jpg" alt="">
 				<br>
-				<a href="#" class="is-active">Кровля</a> |
-				<a href="#">Этаж 1</a> |
-				<a href="#">Этаж 2</a>
+                <a href="#" class="is-active">Этаж 1</a> | <a href="#">Этаж 2</a> | <a href="#">Кровля</a>
 			</div>
 			<!-- begin metr -->
 			<div class="flats__metr">
@@ -2138,6 +2155,7 @@
 </tr><tr><td>7. Холл</td><td>10,80 кв.м</td>
 </tr><tr><td>8. Терраса</td><td>3,92 кв.м</td>
 </tr><tr><td>9. Коридор</td><td>4,05 кв.м</td>
+</tr><tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
 </tr><tr>                                    </tr>
                                     <tr>
                                         <th colspan="2">2 этаж</th>
@@ -2157,7 +2175,7 @@
                                     </tr>
                                     </tfoot>
                                 </table>
-				<a href="img/app/s1/5/4/СЕКЦИЯ1,ПЕНТХАУС,ТИП 4.pdf" class="flats__pdf">Подробнее (скачать PDF)</a><a class="flats__br js-popup" data-popup="book1" href="">Получить брошюру</a>
+				<a href="img/app/s1/5/4/СЕКЦИЯ1,ПЕНТХАУС,ТИП 4.pdf" target="_blank" class="flats__pdf" >Подробнее (скачать PDF)</a><a class="flats__br js-popup" data-popup="book1" href="">Получить брошюру</a>
 			</div>
 		</div>
 		<!-- end flats metr -->
@@ -2176,7 +2194,7 @@
 					<div class="flats__roomresult">Пентхаус</div>
 				</div>
 				<div class="flats__type">
-					<a href="#" data-goto="app15" >Тип1</a><br>
+					<a href="#" data-goto="app15" >Тип 1</a><br>
 					<a href="#" data-goto="app15t2">Тип 2</a><br>
 					<a href="#" data-goto="app15t3"  >Тип 3</a><br>
 					<a href="#" data-goto="app15t4" >Тип 4</a><br>
@@ -2187,13 +2205,11 @@
 				</div>
 			</div>
 			<div class="flats__image">
-				<img class="is-active" src="img/app/s1/5/5/СЕКЦИЯ1,ПЕНТХАУС,ТИП-5,КРОВЛЯ.jpg" alt="">
-				<img style="display:none" src="img/app/s1/5/5/СЕКЦИЯ1,ПЕНТХАУС,ТИП-5,ЭТАЖ1.jpg" alt="">
+				<img class="is-active" src="img/app/s1/5/5/СЕКЦИЯ1,ПЕНТХАУС,ТИП-5,ЭТАЖ1.jpg" alt="">
 				<img style="display:none" src="img/app/s1/5/5/СЕКЦИЯ1,ПЕНТХАУС,ТИП-5,ЭТАЖ2.jpg" alt="">
+				<img style="display:none" src="img/app/s1/5/5/СЕКЦИЯ1,ПЕНТХАУС,ТИП-5,КРОВЛЯ.jpg" alt="">
 				<br>
-				<a href="#" class="is-active">Кровля</a> |
-				<a href="#">Этаж 1</a> |
-				<a href="#">Этаж 2</a>
+                <a href="#" class="is-active">Этаж 1</a> | <a href="#">Этаж 2</a> | <a href="#">Кровля</a>
 			</div>
 			<!-- begin metr -->
 			<div class="flats__metr">
@@ -2209,6 +2225,7 @@
 </tr><tr><td>3. Лоджия</td><td>3,15 кв.м</td>
 </tr><tr><td>4. Кухня / Столовая</td><td>27,60 кв.м</td>
 </tr><tr><td>5. Ванная</td><td>4,48 кв.м</td>
+</tr><tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
 </tr><tr>                                    </tr>
                                     <tr>
                                         <th colspan="2">2 этаж</th>
@@ -2227,7 +2244,7 @@
                                     </tr>
                                     </tfoot>
                                 </table>
-				<a href="img/app/s1/5/5/СЕКЦИЯ1,ПЕНТХАУС,ТИП 5.pdf" class="flats__pdf">Подробнее (скачать PDF)</a><a class="flats__br js-popup" data-popup="book1" href="">Получить брошюру</a>
+				<a href="img/app/s1/5/5/СЕКЦИЯ1,ПЕНТХАУС,ТИП 5.pdf" target="_blank" class="flats__pdf" >Подробнее (скачать PDF)</a><a class="flats__br js-popup" data-popup="book1" href="">Получить брошюру</a>
 			</div>
 		</div>
 		<!-- end flats metr -->
@@ -2246,7 +2263,7 @@
 					<div class="flats__roomresult">Пентхаус</div>
 				</div>
 				<div class="flats__type">
-					<a href="#" data-goto="app25"  class="is-active">Тип1</a><br>
+					<a href="#" data-goto="app25"  class="is-active">Тип 1</a><br>
 					<a href="#" data-goto="app25t2">Тип 2</a><br>
 					<a href="#" data-goto="app25t3"  >Тип 3</a>
 				</div>
@@ -2280,6 +2297,7 @@
 </tr><tr><td>8. Ванная</td> <td>4,24 кв.м</td>
 </tr><tr><td>9. Кладовая</td> <td>3,60 кв.м</td>
 </tr><tr><td>10. Терраса</td> <td>8,27 кв.м</td>
+</tr><tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
 </tr><tr>                                    </tr>
                                     <tr>
                                         <th colspan="2">2 этаж</th>
@@ -2296,7 +2314,7 @@
                                     </tr>
                                     </tfoot>
                                 </table>
-				<a href="img/app/s2/5/1/СЕКЦИЯ2,ПЕНТХАУС,ТИП 1.pdf" class="flats__pdf">Подробнее (скачать PDF)</a><a class="flats__br js-popup" data-popup="book1" href="">Получить брошюру</a>
+				<a href="img/app/s2/5/1/СЕКЦИЯ2,ПЕНТХАУС,ТИП 1.pdf" target="_blank" class="flats__pdf" >Подробнее (скачать PDF)</a><a class="flats__br js-popup" data-popup="book1" href="">Получить брошюру</a>
 			</div>
 		</div>
 		<!-- end flats metr -->
@@ -2314,7 +2332,7 @@
 					<div class="flats__roomresult">Пентхаус</div>
 				</div>
 				<div class="flats__type">
-					<a href="#" data-goto="app25"  >Тип1</a><br>
+					<a href="#" data-goto="app25"  >Тип 1</a><br>
 					<a href="#" data-goto="app25t2" class="is-active">Тип 2</a><br>
 					<a href="#" data-goto="app25t3"  >Тип 3</a>
 				</div>
@@ -2349,6 +2367,7 @@
 </tr><tr><td>9. Ванная</td><td>8,04 кв.м</td>
 </tr><tr><td>10. Кладовая</td><td>3,76 кв.м</td>
 </tr><tr><td>11. Терраса</td><td>13,80 кв.м</td>
+</tr><tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
 </tr><tr>                                    </tr>
                                     <tr>
                                         <th colspan="2">2 этаж</th>
@@ -2365,7 +2384,7 @@
                                     </tr>
                                     </tfoot>
                                 </table>
-				<a href="img/app/s2/5/2/СЕКЦИЯ2,ПЕНТХАУС,ТИП 2.pdf" class="flats__pdf">Подробнее (скачать PDF)</a><a class="flats__br js-popup" data-popup="book1" href="">Получить брошюру</a>
+				<a href="img/app/s2/5/2/СЕКЦИЯ2,ПЕНТХАУС,ТИП 2.pdf" target="_blank" class="flats__pdf" >Подробнее (скачать PDF)</a><a class="flats__br js-popup" data-popup="book1" href="">Получить брошюру</a>
 			</div>
 		</div>
 		<!-- end flats metr -->
@@ -2383,7 +2402,7 @@
 					<div class="flats__roomresult">Пентхаус</div>
 				</div>
 				<div class="flats__type">
-					<a href="#" data-goto="app25"  >Тип1</a><br>
+					<a href="#" data-goto="app25"  >Тип 1</a><br>
 					<a href="#" data-goto="app25t2" >Тип 2</a><br>
 					<a href="#" data-goto="app25t3"  class="is-active">Тип 3</a>
 				</div>
@@ -2421,6 +2440,7 @@
 </tr><tr><td>12. Ванная</td><td>3,43 кв.м</td>
 </tr><tr><td>13. Ванная</td><td>4,22 кв.м</td>
 </tr><tr><td>14. Терраса</td><td>17,21 кв.м</td>
+</tr><tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
 </tr><tr>                                    </tr>
                                     <tr>
                                         <th colspan="2">2 этаж</th>
@@ -2437,7 +2457,7 @@
                                     </tr>
                                     </tfoot>
                                 </table>
-				<a href="img/app/s2/5/3/СЕКЦИЯ2,ПЕНТХАУС,ТИП 3.pdf" class="flats__pdf">Подробнее (скачать PDF)</a><a class="flats__br js-popup" data-popup="book1" href="">Получить брошюру</a>
+				<a href="img/app/s2/5/3/СЕКЦИЯ2,ПЕНТХАУС,ТИП 3.pdf" target="_blank" class="flats__pdf" >Подробнее (скачать PDF)</a><a class="flats__br js-popup" data-popup="book1" href="">Получить брошюру</a>
 			</div>
 		</div>
 		<!-- end flats metr -->
@@ -2458,9 +2478,10 @@
 
 <!-- begin cameras  -->
 <div class="cameras" data-section="true" id="gallery">
+<h2 class="title"><span>Преимущества</span></h2>
 	<!-- begin camera  -->
 	<a href="#" class="camera js-popup" data-popup="camera" >
-		<div class="camera__pic" style="background: url(img/bg1.jpg)"></div>
+		<div class="camera__pic" style="background-image: url(img/bg1.jpg)"></div>
 		<div class="camera__in">
 			<h3>ВЕБ-КАМЕРа</h3>
 			<p>Ход строительства в реальном времени</p>
@@ -2469,7 +2490,7 @@
 	<!-- end camera -->
 	<!-- begin camera  -->
 	<a href="#" class="camera js-popup" data-popup="gallery1">
-		<div class="camera__pic" style="background: url(img/bg2.jpg)"></div>
+		<div class="camera__pic" style="background-image: url(img/bg2.jpg)"></div>
 		<div class="camera__in">
 			<h3>ГАЛЕРЕЯ</h3>
 			<p>Фотографии интерьра и экстерьера</p>
@@ -2481,6 +2502,7 @@
 
 <!-- begin dragon  -->
 <div class="dragon" data-section="true" id="developer">
+<h2 class="title"><span>Девелопер</span></h2>
 	<div class="dragon__in">
 		<div class="dragon__logo">
 			<img src="img/icons/dragon.png" alt="">
@@ -2492,11 +2514,7 @@
 			<p>Продажу квартир осуществляет ЗНВПИФ "Девелопмент" ООО "Драгон Эссет Менеджмент".</p>
 			</div>
 			<div class="col">
-			<p>DUPD создан инвестиционной компанией целью инвестирования в украинский рынок жилой и коммерческой недвижимости. DUPD уже инвестировал более $250  млн. в ряд проектов в Украине, среди которых коттеджный городок Green Hills, эксклюзивный клубный поселок Riviera Villas, сеть гипермаркетов «Новая линия» и компания Arricano, инвестирующая в объекты торговой недвижимости
-			(торгово-развлекательные центры Skymall, «Район», «Проспект» (Киев), Sun Gallery (Кривой Рог), City Mall (Запорожье), Inter Mall (Симферополь) и другие).</p>
-			</div>
-			<div class="col">
-			<p>Dragon Capital – крупнейшая инвестиционная компания Украины, предоставляющая полный спектр инвестиционно-банковских и брокерских услуг для институциональных, корпоративных и частных клиентов. Основана в 2000 в Киеве. Контроль над Dragon Capital принадлежит ее менеджменту, миноритарным пакетом компании владеет Goldman Sachs, одна из крупнейших мировых инвестиционных компаний. Под управлением Dragon Capital находится инвестиционный портфель стоимостью около $0,5 млрд.</p>
+			<p>DUPD был создан инвестиционной компанией Dragon Capital в феврале 2007 года с целью инвестирования в украинский рынок жилой и коммерческой недвижимости. DUPD уже инвестировал более $250 млн. в ряд проектов в Украине, среди которых коттеджный городок Green Hills, эксклюзивный клубный поселок Riviera Villas, жилой комплекс Obolon Residences, компания Arricano, инвестирующая в строительство сети торгово-развлекательных центров по Украине, и другие.</p>
 			</div>
 		</div>
 	</div>
@@ -2541,7 +2559,7 @@
 				<div class="ask__in">
 					<h2>ЗАДАТЬ ВОПРОС</h2>
 					<form action="/send.php" class="form">
-					<div class="thankyou">Спасибо!</div>
+					<div class="thankyou">Спасибо! Ваше сообщение отправлено!</div>
 					<input type="hidden" name="title" value="ЗАДАТЬ ВОПРОС" >
 					<input type="text" name="name" placeholder="Введите Имя" id="">
 					<input type="text" name="contact" placeholder="Введите e-mail/телефон" id="">
@@ -2571,7 +2589,7 @@
 				<div class="ask__close"></div>
 				<h2>Записаться на просмотр</h2>
 				<form class="form" action="send.php">
-				<div class="thankyou">Спасибо!</div>
+				<div class="thankyou">Спасибо! Ваше сообщение отправлено!</div>
 				<input type="hidden" name="title" value="Записаться на просмотр">
 				<input type="text" name="name" placeholder="Введите Имя" id="">
 				<input type="text" name="contact" placeholder="Введите e-mail/телефон" id="">
@@ -2854,6 +2872,7 @@
 			<div class="feat__lesstext">
 				<div class="feat__close"></div>
 					<div class="flattitle flats__result"></div>
+					<div class="flattype"></div>
 					<div class="flattext">
 								<table>
 				                                    <thead>
@@ -2880,6 +2899,7 @@
 				</tr><tr><td>12. Ванная</td><td>3,43 кв.м</td>
 				</tr><tr><td>13. Ванная</td><td>4,22 кв.м</td>
 				</tr><tr><td>14. Терраса</td><td>17,21 кв.м</td>
+				</tr><tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
 				</tr><tr>                                    </tr>
 				                                    <tr>
 				                                        <th colspan="2">2 этаж</th>
@@ -2896,7 +2916,7 @@
 				                                    </tr>
 				                                    </tfoot>
 				                                </table>
-								<a href="img/app/s2/5/3/СЕКЦИЯ2,ПЕНТХАУС,ТИП 3.pdf" class="flats__pdf">Подробнее (скачать PDF)</a><a class="flats__br js-popup" data-popup="book1" href="">Получить брошюру</a>
+								<a href="img/app/s2/5/3/СЕКЦИЯ2,ПЕНТХАУС,ТИП 3.pdf" target="_blank" class="flats__pdf" >Подробнее (скачать PDF)</a><a class="flats__br js-popup" data-popup="book1" href="">Получить брошюру</a>
 								</div>
 								<!-- end flat text -->
 			</div>
